@@ -12,8 +12,8 @@ interface IconProps {
   style: React.CSSProperties;
 }
 
-export function NavbarIcon() {
-  return <FontAwesomeIcon icon={faBars} size='2x' />;
+export function NavbarIcon(props: IconProps) {
+  return <FontAwesomeIcon icon={faBars} style={props.style} />;
 }
 
 export function CloseIcon() {

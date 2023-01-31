@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ThemeSwitcher = styled.button`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 0 0.5rem !important;
   color: ${(props) => props.theme.colors.text};
@@ -14,6 +14,8 @@ export const ThemeSwitcher = styled.button`
   width: auto;
 `;
 
-export const Icon = styled.div``;
+export const Icon = styled.div`
+  margin-right: 0.5rem;
+`;
 
 export const Content = styled.div``;

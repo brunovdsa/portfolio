@@ -1,7 +1,7 @@
 import { useContext, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { DefaultTheme, ThemeContext } from 'styled-components';
-import { NavbarIcon } from '../Icons';
+import { CloseIcon, NavbarIcon } from '../Icons';
 import ThemeSwitcherBtn from '../ThemeSwitcherBtn/ThemeSwitcherBtn';
 import {
   Button,
@@ -31,7 +31,7 @@ export default function Navbar(props: NavbarProps) {
   return (
     <Container>
       <Button onClick={onClick}>
-        <NavbarIcon />
+        <NavbarIcon style={{ height: '2.3rem' }} />
       </Button>
       {isActive && <BackgroundOverlay onClick={onClick} />}
       <Nav
@@ -46,12 +46,17 @@ export default function Navbar(props: NavbarProps) {
           <Link to={'/'} onClick={onClick}>
             Home
           </Link>
-          <Button onClick={onClick}>X</Button>
+          <Button onClick={onClick}>
+            <CloseIcon />
+          </Button>
         </NavHeader>
 
         <NavContent>
-          <Link to={'/'} onClick={onClick}>
+          <Link to={'/about'} onClick={onClick}>
             About
+          </Link>
+          <Link to={'/projects'} onClick={onClick}>
+            Projects
           </Link>
         </NavContent>
 

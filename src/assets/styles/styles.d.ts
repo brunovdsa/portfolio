@@ -18,17 +18,19 @@ declare module 'styled-components' {
 
       caption_400: string;
       caption_600: string;
+      success: string;
     };
 
     font_family: {
       inter: string;
+      monoton: string;
     };
 
     font_weight: {
+      light: number;
       regular: number;
       semi_bold: number;
       bold: number;
-      black: number;
     };
 
     font_size: {

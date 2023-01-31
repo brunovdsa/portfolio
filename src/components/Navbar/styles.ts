@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  font-family: ${(props) => props.theme.font_family.inter};
+`;
 
 export const Button = styled.button`
   background-color: transparent;
@@ -38,10 +40,10 @@ export const Nav = styled.nav`
   a {
     color: ${(props) => props.theme.colors.text};
     font-size: ${(props) => props.theme.font_size.sm};
-    font-weight: ${(props) => props.theme.font_weight.bold};
+    font-weight: ${(props) => props.theme.font_weight.regular};
     text-decoration: none;
     width: 100%;
-    padding: 0.7rem 0;
+    padding: 0.7rem 0.5rem;
   }
 `;
 

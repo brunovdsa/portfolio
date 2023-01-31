@@ -12,7 +12,7 @@ export function Header(props: HeaderProps) {
   return (
     <Container>
       <Link to={'/'}>
-        <Title>bvdsa</Title>
+        <Title>B</Title>
       </Link>
 
       <Navbar toggleTheme={props.toggleTheme} theme={props.theme} />
