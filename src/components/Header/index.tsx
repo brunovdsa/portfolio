@@ -1,8 +1,21 @@
-export function Header() {
+import { Link } from 'react-router-dom';
+import { DefaultTheme } from 'styled-components';
+import Navbar from '../Navbar';
+import { Container, Title } from './styles';
+
+interface HeaderProps {
+  toggleTheme(): void;
+  theme: DefaultTheme;
+}
+
+export function Header(props: HeaderProps) {
   return (
-    <>
-      <h1>1</h1>
-      <h1>2</h1>
-    </>
+    <Container>
+      <Link to={'/'}>
+        <Title>bvdsa</Title>
+      </Link>
+
+      <Navbar toggleTheme={props.toggleTheme} theme={props.theme} />
+    </Container>
   );
 }

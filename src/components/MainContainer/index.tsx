@@ -1,14 +1,32 @@
+import { DefaultTheme, ThemeProvider } from 'styled-components';
+
+import usePersistedState from '../../utils/usePersistedState';
+
 import { Header } from '../Header';
 
-interface HeaderProps {
+import GlobalStyle from '../../assets/styles/global';
+import dark from '../../theme/dark';
+import light from '../../theme/light';
+import { Container } from './styles';
+
+interface MainContainerProps {
   children: JSX.Element;
 }
 
-export function MainContainer(props: HeaderProps) {
+export function MainContainer(props: MainContainerProps) {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark);
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'dark' ? light : dark);
+  };
+
   return (
-    <div>
-      <Header />
-      <div>{props.children}</div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Container>
+        <GlobalStyle />
+        <Header toggleTheme={toggleTheme} theme={theme} />
+        <div>{props.children}</div>
+      </Container>
+    </ThemeProvider>
   );
 }
