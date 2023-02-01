@@ -99,6 +99,8 @@ export const VisitBtn = styled.a`
 `;
 
 export const RepositoryBtn = styled.a`
+  color: ${(props) => props.theme.colors.text};
+  text-decoration: none;
   margin: 0.5rem 0;
   cursor: pointer;
 

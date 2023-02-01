@@ -17,9 +17,10 @@ import {
 interface CardProps {
   name: string;
   description: string;
-  url: string;
   techs: string[];
   imgUrl: string;
+  appUrl: string;
+  repoUrl: string;
 }
 
 export default function Card(props: CardProps) {
@@ -40,8 +41,8 @@ export default function Card(props: CardProps) {
           <Img src={props.imgUrl} />
         </ImgContainer>
 
-        <VisitBtn href={props.url}> Visit {props.name}</VisitBtn>
-        <RepositoryBtn>
+        <VisitBtn href={props.appUrl}> Visit {props.name}</VisitBtn>
+        <RepositoryBtn href={props.repoUrl}>
           <GitHubIcon />
         </RepositoryBtn>
       </Info>
