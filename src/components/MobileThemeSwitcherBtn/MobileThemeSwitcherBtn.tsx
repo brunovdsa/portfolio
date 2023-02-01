@@ -3,10 +3,10 @@ import { ThemeSwitcher, Icon, Content } from './styles';
 
 interface ThemeSwitcherBtnProps {
   toggleTheme(): void;
-  title: string;
+  title?: string;
 }
 
-export default function ThemeSwitcherBtn(props: ThemeSwitcherBtnProps) {
+export default function MobileThemeSwitcherBtn(props: ThemeSwitcherBtnProps) {
   return (
     <ThemeSwitcher onClick={props.toggleTheme}>
       <Icon>{props.title === 'light' ? <MoonIcon /> : <SunIcon />}</Icon>

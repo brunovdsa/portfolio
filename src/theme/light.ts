@@ -2,9 +2,11 @@ export default {
   title: 'light',
 
   colors: {
-    background: '#FBFBFB',
-    background_700: '#F1F1F1',
-    background_800: '#F0F0F0',
+    background:
+      'linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2))',
+    background_700:
+      'linear-gradient(135deg, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0))',
+    background_800: 'linear-gradient(-45deg, #AEE2FF, #FFCEFE, #7286D3)',
 
     text: '#333',
     text_overlay: '#F5F5F5',

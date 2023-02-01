@@ -7,6 +7,10 @@ export const Intro = styled.div`
   align-items: center;
   height: 90vh;
   padding: 4rem 0;
+
+  @media (min-width: 1100px) {
+    flex-direction: row;
+  }
 `;
 
 export const Img = styled.img`
@@ -55,7 +59,7 @@ export const AboutBtn = styled.div`
 `;
 
 export const ProjectsBtn = styled.div`
-  background-color: ${(props) => props.theme.colors.text};
+  background: ${(props) => props.theme.colors.background};
   font-size: ${(props) => props.theme.font_size.md};
   font-weight: ${(props) => props.theme.font_weight.semi_bold};
   margin: 0 0 1.5rem;
@@ -63,10 +67,15 @@ export const ProjectsBtn = styled.div`
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
+  }
 
   a {
     text-decoration: none;
-    color: ${(props) => props.theme.colors.background_800};
+    color: ${(props) => props.theme.colors.text};
     width: 100%;
     display: flex;
     justify-content: center;

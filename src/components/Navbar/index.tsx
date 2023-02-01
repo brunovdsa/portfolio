@@ -2,7 +2,7 @@ import { useContext, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { DefaultTheme, ThemeContext } from 'styled-components';
 import { CloseIcon, NavbarIcon } from '../Icons';
-import ThemeSwitcherBtn from '../ThemeSwitcherBtn/ThemeSwitcherBtn';
+import ThemeSwitcherBtn from '../MobileThemeSwitcherBtn/MobileThemeSwitcherBtn';
 import {
   Button,
   Container,
