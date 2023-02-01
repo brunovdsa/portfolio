@@ -10,6 +10,7 @@ export const Intro = styled.div`
 
   @media (min-width: 1100px) {
     flex-direction: row;
+    align-items: center;
   }
 `;
 
@@ -17,6 +18,10 @@ export const Img = styled.img`
   height: 12rem;
   border-radius: 100%;
   margin: 0 0 1rem;
+
+  @media (min-width: 1100px) {
+    height: 22rem;
+  }
 `;
 
 export const About = styled.div`
@@ -38,24 +43,17 @@ export const Description = styled.span`
   margin: 1rem 0;
   font-size: ${(props) => props.theme.font_size.sm};
   font-weight: ${(props) => props.theme.font_weight.regular};
+
+  @media (min-width: 1100px) {
+    font-size: ${(props) => props.theme.font_size.md};
+  }
 `;
 
 export const Links = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 2rem 4rem;
-`;
-
-export const AboutBtn = styled.div`
-  background-color: transparent;
-  font-size: ${(props) => props.theme.font_size.md};
-  font-weight: ${(props) => props.theme.font_weight.bold};
-  border: none;
-  cursor: pointer;
-  a {
-    text-decoration: underline;
-    color: ${(props) => props.theme.colors.text};
-  }
 `;
 
 export const ProjectsBtn = styled.div`
@@ -68,19 +66,41 @@ export const ProjectsBtn = styled.div`
   border-radius: 25px;
   cursor: pointer;
   transition: 0.2s;
-
-  &:hover {
-    box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
-  }
+  width: 100%;
 
   a {
     text-decoration: none;
     color: ${(props) => props.theme.colors.text};
-    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     width: 100%;
     height: 100%;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
+  }
+  @media (min-width: 1100px) {
+    width: 70%;
+  }
+`;
+
+export const AboutBtn = styled.div`
+  background-color: transparent;
+  font-size: ${(props) => props.theme.font_size.md};
+  font-weight: ${(props) => props.theme.font_weight.bold};
+  border: none;
+  cursor: pointer;
+  a {
+    text-decoration: underline;
+    color: ${(props) => props.theme.colors.text};
+    &:hover {
+      color: ${(props) => props.theme.colors.caption_600};
+    }
+  }
+
+  @media (min-width: 1100px) {
+    width: 70%;
   }
 `;
