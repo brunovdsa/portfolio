@@ -6,7 +6,10 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.section`
-  padding: 0 2rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  max-width: 99%;
 
   @media (min-width: 1100px) {
     padding: 0;

@@ -20,6 +20,7 @@ export const BackgroundOverlay = styled.div`
   background-color: ${(props) => props.theme.colors.overlay};
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
 `;
 
 export const Nav = styled.nav`
