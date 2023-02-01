@@ -1,3 +1,4 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import {
   faAngleDown,
   faBars,
@@ -34,4 +35,7 @@ export function MoonIcon() {
 
 export function SunIcon() {
   return <FontAwesomeIcon icon={faSun} />;
+}
+export function GitHubIcon() {
+  return <FontAwesomeIcon icon={faGithub} />;
 }

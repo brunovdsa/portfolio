@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
+export const Main = styled.main`
+  margin: 1.1rem 0;
+`;
+
 export const Intro = styled.div`
   font-family: ${(props) => props.theme.font_family.inter};
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   padding: 4rem 0;
 
   @media (min-width: 1100px) {

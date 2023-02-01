@@ -9,8 +9,8 @@ export const Container = styled.div`
 
   margin: 3rem 0;
 
-  padding: 2rem 1rem;
-  max-width: 95%;
+  padding: 2rem 2rem;
+
   color: ${(props) => props.theme.colors.text};
   background: ${(props) => props.theme.colors.background};
   border-radius: 25px;
@@ -18,10 +18,15 @@ export const Container = styled.div`
 
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
-  max-width: 95%;
+  max-width: 100%;
 `;
 
-export const Info = styled.div``;
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+`;
 
 export const Title = styled.h1`
   font-size: ${(props) => props.theme.font_size.lg};
@@ -45,12 +50,12 @@ export const MadeWith = styled.span`
 `;
 
 export const List = styled.ul`
-  font-size: ${(props) => props.theme.font_size.sm};
-  font-weight: ${(props) => props.theme.font_weight.regular};
+  font-size: ${(props) => props.theme.font_size.xsm};
+  font-weight: ${(props) => props.theme.font_weight.light};
   text-decoration: none;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 `;
@@ -62,7 +67,14 @@ export const ItemsList = styled.li`
   backdrop-filter: blur(300px);
   -webkit-backdrop-filter: blur(300px);
   padding: 0.5rem 0.8rem;
-  margin: 0.2rem 0;
+  margin: 0.5rem 0.2rem;
+`;
+
+export const ImgContainer = styled.div``;
+
+export const Img = styled.img`
+  width: 18rem;
+  max-width: fit-content;
 `;
 
 export const VisitBtn = styled.a`
@@ -78,7 +90,7 @@ export const VisitBtn = styled.a`
   -webkit-backdrop-filter: blur(300px);
   border-radius: 25px;
   padding: 0.8rem 2rem;
-  margin: 1rem 0 1rem;
+  margin: 1rem 1rem 0.5rem;
   transition: 0.2s;
 
   &:hover {
@@ -86,11 +98,15 @@ export const VisitBtn = styled.a`
   }
 `;
 
-export const ImgContainer = styled.div`
-  margin: 1.5rem 0;
-`;
+export const RepositoryBtn = styled.a`
+  margin: 0.5rem 0;
+  cursor: pointer;
 
-export const Img = styled.img`
-  height: 10rem;
-  max-width: fit-content;
+  svg {
+    height: 1.3rem;
+  }
+
+  &:hover {
+    color: ${(props) => props.theme.colors.caption_600};
+  }
 `;

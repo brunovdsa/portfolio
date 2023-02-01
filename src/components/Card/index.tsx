@@ -1,3 +1,4 @@
+import { GitHubIcon } from '../Icons';
 import {
   Container,
   Description,
@@ -7,6 +8,7 @@ import {
   ItemsList,
   List,
   MadeWith,
+  RepositoryBtn,
   Techs,
   Title,
   VisitBtn,
@@ -34,11 +36,15 @@ export default function Card(props: CardProps) {
             ))}
           </List>
         </Techs>
+        <ImgContainer>
+          <Img src={props.imgUrl} />
+        </ImgContainer>
+
         <VisitBtn href={props.url}> Visit {props.name}</VisitBtn>
+        <RepositoryBtn>
+          <GitHubIcon />
+        </RepositoryBtn>
       </Info>
-      <ImgContainer>
-        <Img src={props.imgUrl} />
-      </ImgContainer>
     </Container>
   );
 }

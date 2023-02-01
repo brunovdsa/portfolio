@@ -11,6 +11,8 @@ import { Container } from './styles';
 
 interface MainContainerProps {
   children: JSX.Element;
+
+  style?: React.CSSProperties;
 }
 
 export function MainContainer(props: MainContainerProps) {
