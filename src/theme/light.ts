@@ -34,7 +34,7 @@ export default {
 
   font_size: {
     xsm: '0.8rem',
-    sm: '1rem',
+    sm: '1.1rem',
     md: '1.3rem',
     lg: '1.9rem',
     xlg: '2.5rem',

@@ -31,7 +31,7 @@ export default function Navbar(props: NavbarProps) {
   return (
     <Container>
       <Button onClick={onClick}>
-        <NavbarIcon style={{ height: '2.3rem' }} />
+        <NavbarIcon style={{ height: '2rem' }} />
       </Button>
       {isActive && <BackgroundOverlay onClick={onClick} />}
       <Nav

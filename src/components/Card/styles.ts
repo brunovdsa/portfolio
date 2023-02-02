@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   text-align: center;
 
-  margin: 3rem 0;
+  margin: 2rem 0;
 
   padding: 2rem 2rem;
 
@@ -19,6 +19,13 @@ export const Container = styled.div`
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
   max-width: 100%;
+
+  @media (min-width: 1100px) {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 4rem 2rem;
+    margin: 3rem 12rem;
+  }
 `;
 
 export const Info = styled.div`
@@ -38,6 +45,12 @@ export const Description = styled.p`
   font-size: ${(props) => props.theme.font_size.sm};
   font-weight: ${(props) => props.theme.font_weight.regular};
   margin: 0 0 1rem;
+
+  @media (min-width: 1100px) {
+    font-size: ${(props) => props.theme.font_size.sm};
+    font-weight: ${(props) => props.theme.font_weight.regular};
+    margin: 0 0 2rem;
+  }
 `;
 
 export const Techs = styled.div`
@@ -47,6 +60,11 @@ export const Techs = styled.div`
 export const MadeWith = styled.span`
   font-size: ${(props) => props.theme.font_size.sm};
   font-weight: ${(props) => props.theme.font_weight.bold};
+
+  @media (min-width: 1100px) {
+    font-size: ${(props) => props.theme.font_size.md};
+    font-weight: ${(props) => props.theme.font_weight.bold};
+  }
 `;
 
 export const List = styled.ul`
@@ -70,11 +88,28 @@ export const ItemsList = styled.li`
   margin: 0.5rem 0.2rem;
 `;
 
-export const ImgContainer = styled.div``;
+export const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Img = styled.img`
+  display: none;
+
+  @media (min-width: 1100px) {
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+  }
+`;
+export const ImgMobile = styled.img`
   width: 18rem;
   max-width: fit-content;
+
+  @media (min-width: 1100px) {
+    display: none;
+  }
 `;
 
 export const VisitBtn = styled.a`
@@ -95,6 +130,10 @@ export const VisitBtn = styled.a`
 
   &:hover {
     box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
+  }
+
+  @media (min-width: 1100px) {
+    padding: 0.8rem 4rem;
   }
 `;
 

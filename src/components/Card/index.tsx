@@ -3,6 +3,7 @@ import {
   Container,
   Description,
   Img,
+  ImgMobile,
   ImgContainer,
   Info,
   ItemsList,
@@ -19,6 +20,7 @@ interface CardProps {
   description: string;
   techs: string[];
   imgUrl: string;
+  imgMobileUrl: string;
   appUrl: string;
   repoUrl: string;
 }
@@ -37,15 +39,24 @@ export default function Card(props: CardProps) {
             ))}
           </List>
         </Techs>
-        <ImgContainer>
-          <Img src={props.imgUrl} />
-        </ImgContainer>
 
         <VisitBtn href={props.appUrl}> Visit {props.name}</VisitBtn>
         <RepositoryBtn href={props.repoUrl}>
           <GitHubIcon />
         </RepositoryBtn>
       </Info>
+      <ImgContainer>
+        <Img
+          src={props.imgUrl}
+          loading='lazy'
+          alt={`Photo of project: ${props.name}`}
+        />
+        <ImgMobile
+          src={props.imgMobileUrl}
+          loading='lazy'
+          alt={`Photo of project: ${props.name}`}
+        />
+      </ImgContainer>
     </Container>
   );
 }

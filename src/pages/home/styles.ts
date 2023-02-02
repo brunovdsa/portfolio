@@ -24,7 +24,7 @@ export const Img = styled.img`
   margin: 0 0 1rem;
 
   @media (min-width: 1100px) {
-    height: 22rem;
+    height: 18rem;
   }
 `;
 
