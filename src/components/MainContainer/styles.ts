@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   background: ${(props) => props.theme.colors.background_800};
   background-size: 1200% 1200%;
-  animation: gradient 10s ease infinite reverse;
+  animation: gradient 7s ease infinite reverse;
 
   @keyframes gradient {
     0% {

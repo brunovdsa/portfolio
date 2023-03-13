@@ -17,7 +17,7 @@ export default {
     caption_400: '#a1a1aa',
     caption_600: '#6c6c70',
 
-    success: '#26A69A',
+    success: '#00b7a6',
   },
 
   font_family: {
