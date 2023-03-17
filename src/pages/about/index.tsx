@@ -8,6 +8,7 @@ import {
   Content,
   Img,
   Info,
+  HeaderContent,
 } from './styles';
 
 import me from '../../assets/img/me.png';
@@ -21,17 +22,19 @@ export default function About() {
           <Section>
             <AboutContainer>
               <Content>
-                <Info>
-                  I'm Bruno, a developer & <span>creative coder</span> who
-                  specializes in front-end development. My mission is to
-                  translate user-focussed designs into beautiful websites or
-                  applications.
-                </Info>
-                <Img src={me} />
-                <Info>
-                  I'm currently looking for an oportunity to use my knoledge and
-                  experience to help the user and the team I'm part of.
-                </Info>
+                <HeaderContent>
+                  <Img src={me} />
+                  <Info>
+                    I'm Bruno, a developer & <span>creative coder</span> who
+                    specializes in front-end development. My mission is to
+                    translate user-focussed designs into beautiful websites or
+                    applications.
+                  </Info>
+                  <Info>
+                    I'm currently looking for an oportunity to use my knoledge
+                    and experience to help the user and the team I'm part of.
+                  </Info>
+                </HeaderContent>
                 <Info>
                   In my last experience, I worked as a junior full-stack
                   developer for the retail segment at

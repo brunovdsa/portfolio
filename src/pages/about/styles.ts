@@ -6,8 +6,12 @@ export const Container = styled.main`
   align-items: center;
   flex-direction: column;
 
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   height: 100vh;
+
+  @media (min-width: 1100px) {
+    padding: 1rem 12rem;
+  }
 `;
 
 export const MainTitle = styled.h1`
@@ -39,6 +43,8 @@ export const Content = styled.div`
   flex-direction: column;
 `;
 
+export const HeaderContent = styled.div``;
+
 export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -49,7 +55,10 @@ export const Img = styled.img`
   display: none;
 
   @media (min-width: 1100px) {
-    display: flex;
+    display: block;
+    width: 15rem;
+    float: left !important;
+    margin: 0 1rem 0 0;
   }
 `;
 
