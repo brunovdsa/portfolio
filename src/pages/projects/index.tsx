@@ -1,4 +1,4 @@
-import Card from '../../components/Card';
+import ProjectCard from '../../components/ProjectCard';
 import { MainContainer } from '../../components/MainContainer';
 import Section from '../../components/Section';
 
@@ -20,7 +20,7 @@ export default function Projects() {
         </Section>
         <Section>
           <CardsContainer>
-            <Card
+            <ProjectCard
               name={'Cooked'}
               description={
                 'Cooked is a recipe website, that allows you to search, and find out how your favorite recipe is done.'
@@ -31,7 +31,7 @@ export default function Projects() {
               repoUrl={'https://github.com/brunovdsa/cooked'}
               imgMobileUrl={cooked}
             />
-            <Card
+            <ProjectCard
               name={'Stock Photos'}
               description={
                 'A place for you to find and download free photos and images, taken from people for all over the wolrd.'
@@ -42,7 +42,7 @@ export default function Projects() {
               repoUrl={'https://github.com/brunovdsa/photoApp'}
               imgMobileUrl={photostock}
             />
-            <Card
+            <ProjectCard
               name={'Stock Exchange'}
               description={
                 'A plataform to search and compare revenue, expenses, profit and EBITDA from the selected company, using graphics.'

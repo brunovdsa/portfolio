@@ -1,8 +1,8 @@
 import { MainContainer } from '../../components/MainContainer';
 import Section from '../../components/Section';
+import Card from '../../components/Card';
 import {
   AboutContainer,
-  Card,
   Container,
   MainTitle,
   Content,
