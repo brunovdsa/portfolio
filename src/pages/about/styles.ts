@@ -21,26 +21,10 @@ export const MainTitle = styled.h1`
   margin: 2rem 0;
 `;
 
-export const Card = styled.div`
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  color: ${(props) => props.theme.colors.text};
-  background: ${(props) => props.theme.colors.background};
-  border-radius: 25px;
-  box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
-
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
-  width: 100%;
-  max-width: 99%;
-  padding: 1.5rem 0;
-`;
-
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 2rem 1rem;
 `;
 
 export const HeaderContent = styled.div``;
@@ -80,5 +64,9 @@ export const Info = styled.p`
         color: ${(props) => props.theme.colors.success};
       }
     }
+  }
+
+  @media (min-width: 1100px) {
+    font-size: ${(props) => props.theme.font_size.md};
   }
 `;
