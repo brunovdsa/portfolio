@@ -4,6 +4,8 @@ import Section from '../../components/Section';
 
 import { CardsContainer, MainTitle } from './styles';
 
+import { motion, useInView } from 'framer-motion';
+import { useEffect } from 'react';
 import cooked from '../../assets/img/cooked.png';
 import cookedfhd from '../../assets/img/cookedfhd.png';
 import photostock from '../../assets/img/photostock.png';
