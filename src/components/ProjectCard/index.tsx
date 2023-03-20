@@ -1,4 +1,11 @@
-import { motion, spring, useAnimation } from 'framer-motion';
+import {
+  easeIn,
+  easeInOut,
+  easeOut,
+  motion,
+  spring,
+  useAnimation,
+} from 'framer-motion';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -32,31 +39,18 @@ interface CardProps {
 export default function ProjectCard(props: CardProps) {
   const { ref, inView } = useInView();
 
-  const animation = useAnimation();
-
-  useEffect(() => {
-    console.log('asduahsdiuahs = ', inView);
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          type: '',
-          duration: 0.8,
-          bounce: 0.3,
-        },
-      });
-    } else {
-      animation.start({
-        x: '-100vw',
-      });
-    }
-  }, [inView]);
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 10 },
+  };
 
   return (
     <div ref={ref}>
       <Container
         as={motion.div}
-        animate={animation}
+        animate={inView ? 'visible' : 'hidden'}
+        transition={{ duration: 1 }}
+        variants={variants}
         viewport={{ once: true, amount: 0.8 }}
       >
         <Info>
