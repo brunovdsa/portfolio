@@ -14,5 +14,10 @@ export const Container = styled.div`
   -webkit-backdrop-filter: blur(100px);
   width: 100%;
   max-width: 99%;
-  padding: 1.5rem 0;
+
+  padding: 0;
+
+  @media (min-width: 1100px) {
+    padding: 1.5rem 0;
+  }
 `;

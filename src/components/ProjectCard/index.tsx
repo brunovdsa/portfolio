@@ -1,12 +1,4 @@
-import {
-  easeIn,
-  easeInOut,
-  easeOut,
-  motion,
-  spring,
-  useAnimation,
-} from 'framer-motion';
-import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import { GitHubIcon } from '../Icons';
