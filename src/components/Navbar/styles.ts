@@ -36,8 +36,8 @@ export const Nav = styled.nav`
   border-radius: 25px;
   box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
   z-index: 1;
-  backdrop-filter: blur(200px);
-  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
 
   button,
   a {

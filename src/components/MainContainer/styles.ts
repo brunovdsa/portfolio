@@ -6,11 +6,25 @@ export const Container = styled.div`
   color: ${(props) => props.theme.colors.text};
 
   background: ${(props) => props.theme.colors.background_800};
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   @media (min-width: 1100px) {
     background: ${(props) => props.theme.colors.background_800};
     background-size: 400% 400%;
-    animation: gradient 20s ease infinite;
+    animation: gradient 15s ease infinite;
 
     @keyframes gradient {
       0% {

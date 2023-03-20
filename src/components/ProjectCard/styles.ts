@@ -15,7 +15,6 @@ export const Container = styled.div`
   background: ${(props) => props.theme.colors.background};
   border-radius: 25px;
   box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
-
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
   max-width: 100%;
@@ -79,11 +78,9 @@ export const List = styled.ul`
 `;
 
 export const ItemsList = styled.li`
-  background-color: ${(props) => props.theme.colors.background_700};
+  background: ${(props) => props.theme.colors.background};
   border-radius: 25px;
 
-  backdrop-filter: blur(300px);
-  -webkit-backdrop-filter: blur(300px);
   padding: 0.5rem 0.8rem;
   margin: 0.5rem 0.2rem;
 `;
@@ -121,8 +118,6 @@ export const VisitBtn = styled.a`
   font-weight: ${(props) => props.theme.font_weight.bold};
   color: ${(props) => props.theme.colors.text};
   background: ${(props) => props.theme.colors.background};
-  backdrop-filter: blur(300px);
-  -webkit-backdrop-filter: blur(300px);
   border-radius: 25px;
   padding: 0.8rem 2rem;
   margin: 1rem 1rem 0.5rem;
