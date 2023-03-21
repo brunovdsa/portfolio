@@ -1,6 +1,6 @@
 import { MainContainer } from '../../components/MainContainer';
 import Section from '../../components/Section';
-import Card from '../../components/Card';
+import Card from '../../components/BlurCard';
 import {
   AboutContainer,
   Container,
@@ -12,6 +12,7 @@ import {
 } from './styles';
 
 import me from '../../assets/img/me.jpeg';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -86,6 +87,9 @@ export default function About() {
                         GitHub.
                       </a>
                     </span>
+                  </Info>
+                  <Info>
+                    See all my journey <Link to={'/experience'}>here</Link>.
                   </Info>
                 </HeaderContent>
               </Content>

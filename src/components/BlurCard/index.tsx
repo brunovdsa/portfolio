@@ -6,6 +6,6 @@ interface CardProps {
   style?: React.CSSProperties;
 }
 
-export default function Card(props: CardProps) {
+export default function BlurCard(props: CardProps) {
   return <Container>{props.children}</Container>;
 }

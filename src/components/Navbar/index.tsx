@@ -52,11 +52,11 @@ export default function Navbar(props: NavbarProps) {
         </NavHeader>
 
         <NavContent>
-          <Link to={'/about'} onClick={onClick}>
-            About
-          </Link>
           <Link to={'/projects'} onClick={onClick}>
             Projects
+          </Link>
+          <Link to={'/about'} onClick={onClick}>
+            About
           </Link>
         </NavContent>
 
