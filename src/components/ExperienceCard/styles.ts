@@ -5,11 +5,19 @@ export const Container = styled.div`
   font-family: ${(props) => props.theme.font_family.inter};
   padding: 1rem;
   max-width: 99%;
+
+  @media (min-width: 1100px) {
+    padding: 3rem 3rem 2rem;
+  }
 `;
 
 export const Header = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1100px) {
+    gap: 0.2rem;
+  }
 `;
 
 export const Company = styled.h1`
@@ -33,6 +41,10 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 1100px) {
+    margin: 0.5rem 0;
+  }
 `;
 
 export const Description = styled.p`
@@ -45,6 +57,10 @@ export const TechContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 1rem 0 0;
+
+  @media (min-width: 1100px) {
+    margin: 2rem 0 0;
+  }
 `;
 
 export const TechList = styled.ul`
@@ -64,4 +80,8 @@ export const Tech = styled.li`
   border-radius: 25px;
   display: flex;
   padding: 0.5rem 0.8rem;
+
+  @media (min-width: 1100px) {
+    padding: 1rem 1.6rem;
+  }
 `;
