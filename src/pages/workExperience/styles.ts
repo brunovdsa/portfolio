@@ -10,6 +10,10 @@ export const Container = styled.div`
   margin: 0 1rem;
 
   gap: 2.5rem;
+
+  @media (min-width: 1100px) {
+    padding: 0 11rem 2rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -18,4 +22,8 @@ export const Title = styled.h1`
   font-size: ${(props) => props.theme.font_size.xlg};
   font-weight: ${(props) => props.theme.font_weight.bold};
   text-decoration: none;
+
+  @media (min-width: 1100px) {
+    margin: 2rem 0 0.5rem;
+  }
 `;

@@ -1,5 +1,6 @@
 import ExperienceCard from '../../components/ExperienceCard';
 import { MainContainer } from '../../components/MainContainer';
+import Section from '../../components/Section';
 import { Container, Title } from './styles';
 
 export default function WorkExperience() {
@@ -7,6 +8,7 @@ export default function WorkExperience() {
     <MainContainer>
       <Container>
         <Title>Work Experience</Title>
+
         <ExperienceCard
           company={'1WorldSyncBR'}
           jobTitle={'Junior Full-Stack Developer'}
