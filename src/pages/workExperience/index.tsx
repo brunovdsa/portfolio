@@ -18,6 +18,7 @@ export default function WorkExperience() {
             'AngularJs',
             'Angular 11+',
             'AWS',
+            'Git',
             'Java',
             'Jira (Atlassian)',
           ]}
@@ -30,33 +31,42 @@ export default function WorkExperience() {
             'Development of solutions for the risk management and vehicle tracking segment. Working with maintenance of the logistics system for the company, creating new pages and functionalities for the end user. Applying concepts of mobile first and great UX design. Started in a legacy system, using jQuery and bootstrap as main tools, and later changed to the main product, using React.'
           }
           techs={[
-            'SQL Server',
+            'Bootstrap',
+            'C#',
             'Git',
             'Jira (Atlassian)',
             'jQuery',
-            'Bootstrap',
-            'Sass',
-            'React',
             'NodeJS',
-            'C#',
+            'React',
+            'Sass',
+            'SQL Server',
             'Scrum',
           ]}
         />
         <ExperienceCard
-          company={'1WorldSyncBR'}
-          jobTitle={'Junior Full-Stack Developer'}
+          company={'Opentech Logistics and Risk Management Solutions'}
+          jobTitle={'Process Assistant'}
           years={'2019 - 2020'}
           description={
             'Used a front-end platform, automating processes of the tracking and registration areas of the company. Direct contact with internal and external customers by e-mail for alignment of business rules.'
           }
           techs={[
             'BOT',
-            'Workflow',
             'Flowcharts',
-            'XML',
             'Kanban',
             'SQL SERVER',
+            'Workflow',
+            'XML',
           ]}
+        />
+        <ExperienceCard
+          company={'Opentech Logistics and Risk Management Solutions'}
+          jobTitle={'Tracking Operator'}
+          years={'2018 - 2019'}
+          description={
+            'Carrying out satellite and GPRS tracking of small, medium and large vehicle trips. Customer service via email and phone, maintaining constant communication throughout the trip, always checking the status of the trip as a whole, from your place of departure to arrival.'
+          }
+          techs={['Internal Systems', 'Zendesk']}
         />
       </Container>
     </MainContainer>

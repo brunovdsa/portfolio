@@ -55,6 +55,9 @@ export default function Navbar(props: NavbarProps) {
           <Link to={'/projects'} onClick={onClick}>
             Projects
           </Link>
+          <Link to={'/experience'} onClick={onClick}>
+            Work Experience
+          </Link>
           <Link to={'/about'} onClick={onClick}>
             About
           </Link>

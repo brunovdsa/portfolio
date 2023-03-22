@@ -46,13 +46,13 @@ export const DesktopNavbar = styled.div`
 export const Nav = styled.nav`
   width: 100%;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
   justify-items: center;
 
   a {
     font-size: ${(props) => props.theme.font_size.sm};
     color: ${(props) => props.theme.colors.text};
-    padding: 0.5rem 2.5rem;
+
     transition: 0.2s;
 
     &:hover {

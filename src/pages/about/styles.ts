@@ -50,6 +50,18 @@ export const Info = styled.p`
   font-size: ${(props) => props.theme.font_size.sm};
   margin: 1rem 0;
 
+  a {
+    text-decoration: none;
+    font-weight: ${(props) => props.theme.font_weight.bold};
+    color: ${(props) => props.theme.colors.text};
+
+    transition: 0.2s;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.success};
+    }
+  }
+
   span {
     color: ${(props) => props.theme.colors.success};
     font-weight: ${(props) => props.theme.font_weight.bold};
