@@ -9,8 +9,6 @@ export const Container = styled.div`
   padding: 2rem 0;
   margin: 0 1rem;
 
-  gap: 2.5rem;
-
   @media (min-width: 1100px) {
     padding: 0 11rem 2rem;
   }
@@ -26,4 +24,12 @@ export const Title = styled.h1`
   @media (min-width: 1100px) {
     margin: 2rem 0 0.5rem;
   }
+`;
+
+export const CardsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2rem 0;
 `;

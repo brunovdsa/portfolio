@@ -1,6 +1,9 @@
 import { MainContainer } from '../../components/MainContainer';
 import Section from '../../components/Section';
 import Card from '../../components/BlurCard';
+
+import { motion } from 'framer-motion';
+
 import {
   AboutContainer,
   Container,
@@ -19,83 +22,90 @@ export default function About() {
     <MainContainer>
       <Container>
         <MainTitle>Here's my story.</MainTitle>
-        <Card>
-          <Section>
-            <AboutContainer>
-              <Content>
-                <Info>
-                  I'm Bruno, a developer & <span>creative coder</span> who
-                  specializes in front-end development. My mission is to
-                  translate user-focussed designs into beautiful websites or
-                  applications.
-                </Info>
-                <Info>
-                  I'm currently looking for an oportunity to use my knoledge and
-                  experience to help the user and the team I'm part of.
-                </Info>
-                <HeaderContent>
-                  <Img src={me} />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          <Card>
+            <Section>
+              <AboutContainer>
+                <Content>
                   <Info>
-                    In my last experience, I worked as a junior full-stack
-                    developer for the retail segment at
-                    <span>
-                      <a target='_blank' href='https://1worldsync.com/br/'>
-                        {' '}
-                        1WorldSyncBR
-                      </a>
-                    </span>
-                    . Where I helped to maintain, and create new functionalities
-                    to the main product, that consists in a plataform that
-                    provides content solutions for products.
+                    I'm Bruno, a developer & <span>creative coder</span> who
+                    specializes in front-end development. My mission is to
+                    translate user-focussed designs into beautiful websites or
+                    applications.
                   </Info>
                   <Info>
-                    Before{' '}
-                    <span>
-                      <a target='_blank' href='https://1worldsync.com/br/'>
-                        {' '}
-                        1WorldSyncBR
-                      </a>
-                    </span>
-                    , I worked at
-                    <span>
-                      <a target='_blank' href='https://opentechgr.com.br/'>
-                        {' '}
-                        OpenTech
-                      </a>
-                    </span>
-                    . First, as a process assistant automating decision-making
-                    processes of the truck tracking system. And later on, became
-                    a junior front-end developer, helping to give maintenance to
-                    the logistic system the comapany uses.
+                    I'm currently looking for an oportunity to use my knoledge
+                    and experience to help the user and the team I'm part of.
                   </Info>
-                  <Info>
-                    You can find me on
-                    <span>
-                      <a
-                        target='_blank'
-                        href='https://www.linkedin.com/in/brunovdsa/'
-                      >
-                        {' '}
-                        Linkedin
-                      </a>
-                    </span>
-                    , where I keep all my professional data up to date, and
-                    where I share and update projects. You can also follow me on
-                    <span>
-                      <a target='_blank' href='https://github.com/brunovdsa'>
-                        {' '}
-                        GitHub.
-                      </a>
-                    </span>
-                  </Info>
-                  <Info>
-                    See all my journey <Link to={'/experience'}>here</Link>.
-                  </Info>
-                </HeaderContent>
-              </Content>
-            </AboutContainer>
-          </Section>
-        </Card>
+                  <HeaderContent>
+                    <Img src={me} />
+                    <Info>
+                      In my last experience, I worked as a junior full-stack
+                      developer for the retail segment at
+                      <span>
+                        <a target='_blank' href='https://1worldsync.com/br/'>
+                          {' '}
+                          1WorldSyncBR
+                        </a>
+                      </span>
+                      . Where I helped to maintain, and create new
+                      functionalities to the main product, that consists in a
+                      plataform that provides content solutions for products.
+                    </Info>
+                    <Info>
+                      Before{' '}
+                      <span>
+                        <a target='_blank' href='https://1worldsync.com/br/'>
+                          {' '}
+                          1WorldSyncBR
+                        </a>
+                      </span>
+                      , I worked at
+                      <span>
+                        <a target='_blank' href='https://opentechgr.com.br/'>
+                          {' '}
+                          OpenTech
+                        </a>
+                      </span>
+                      . First, as a process assistant automating decision-making
+                      processes of the truck tracking system. And later on,
+                      became a junior front-end developer, helping to give
+                      maintenance to the logistic system the comapany uses.
+                    </Info>
+                    <Info>
+                      You can find me on
+                      <span>
+                        <a
+                          target='_blank'
+                          href='https://www.linkedin.com/in/brunovdsa/'
+                        >
+                          {' '}
+                          Linkedin
+                        </a>
+                      </span>
+                      , where I keep all my professional data up to date, and
+                      where I share and update projects. You can also follow me
+                      on
+                      <span>
+                        <a target='_blank' href='https://github.com/brunovdsa'>
+                          {' '}
+                          GitHub.
+                        </a>
+                      </span>
+                    </Info>
+                    <Info>
+                      See all my journey <Link to={'/experience'}>here</Link>.
+                    </Info>
+                  </HeaderContent>
+                </Content>
+              </AboutContainer>
+            </Section>
+          </Card>
+        </motion.div>
       </Container>
     </MainContainer>
   );

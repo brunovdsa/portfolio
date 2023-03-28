@@ -1,6 +1,7 @@
 import ProjectCard from '../../components/ProjectCard';
 import { MainContainer } from '../../components/MainContainer';
 import Section from '../../components/Section';
+import { motion } from 'framer-motion';
 
 import { CardsContainer, MainTitle } from './styles';
 
@@ -19,7 +20,12 @@ export default function Projects() {
           <MainTitle>A selection of my favorite works.</MainTitle>
         </Section>
         <Section>
-          <CardsContainer>
+          <CardsContainer
+            as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
             <ProjectCard
               name={'Cooked'}
               description={
