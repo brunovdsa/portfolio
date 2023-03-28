@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import Card from '../../components/BlurCard';
+
 import {
   Company,
   Container,

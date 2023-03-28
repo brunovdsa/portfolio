@@ -1,4 +1,5 @@
 import { MoonIcon, SunIcon } from '../Icons';
+
 import { ThemeSwitcher, Icon, Content } from './styles';
 
 interface ThemeSwitcherBtnProps {

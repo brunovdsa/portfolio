@@ -1,6 +1,11 @@
-import { MainContainer } from '../../components/MainContainer';
-import Section from '../../components/Section';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
+import Section from '../../components/Section';
+import { MainContainer } from '../../components/MainContainer';
+
+import img from '../../assets/img/me.png';
+
 import {
   Img,
   Intro,
@@ -11,9 +16,6 @@ import {
   ProjectsBtn,
   AboutBtn,
 } from './styles';
-
-import img from '../../assets/img/me.png';
-import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (

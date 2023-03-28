@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { DefaultTheme } from 'styled-components';
+
 import Navbar from '../Navbar';
+import DesktopThemeSwitcherBtn from '../DesktopThemeSwitcherBtn';
 
 import {
   Container,
@@ -10,7 +12,6 @@ import {
   Nav,
   ThemeSwitcherContainer,
 } from './styles';
-import DesktopThemeSwitcherBtn from '../DesktopThemeSwitcherBtn';
 
 interface HeaderProps {
   toggleTheme(): void;

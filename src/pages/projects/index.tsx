@@ -1,9 +1,8 @@
-import ProjectCard from '../../components/ProjectCard';
-import { MainContainer } from '../../components/MainContainer';
-import Section from '../../components/Section';
 import { motion } from 'framer-motion';
 
-import { CardsContainer, MainTitle } from './styles';
+import Section from '../../components/Section';
+import ProjectCard from '../../components/ProjectCard';
+import { MainContainer } from '../../components/MainContainer';
 
 import cooked from '../../assets/img/cooked.png';
 import cookedfhd from '../../assets/img/cookedfhd.png';
@@ -11,6 +10,8 @@ import photostock from '../../assets/img/photostock.png';
 import photostockfhd from '../../assets/img/photostockfhd.png';
 import stockexchange from '../../assets/img/stockexchange.png';
 import stockexchangefhd from '../../assets/img/stockexchangefhd.png';
+
+import { CardsContainer, MainTitle } from './styles';
 
 export default function Projects() {
   return (

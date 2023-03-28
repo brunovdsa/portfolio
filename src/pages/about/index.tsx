@@ -1,8 +1,11 @@
-import { MainContainer } from '../../components/MainContainer';
-import Section from '../../components/Section';
-import Card from '../../components/BlurCard';
-
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
+import Card from '../../components/BlurCard';
+import Section from '../../components/Section';
+import { MainContainer } from '../../components/MainContainer';
+
+import me from '../../assets/img/me.jpeg';
 
 import {
   AboutContainer,
@@ -13,9 +16,6 @@ import {
   Info,
   HeaderContent,
 } from './styles';
-
-import me from '../../assets/img/me.jpeg';
-import { Link } from 'react-router-dom';
 
 export default function About() {
   return (

@@ -4,9 +4,10 @@ import usePersistedState from '../../utils/usePersistedState';
 
 import { Header } from '../Header';
 
-import GlobalStyle from '../../assets/styles/global';
 import dark from '../../theme/dark';
 import light from '../../theme/light';
+import GlobalStyle from '../../assets/styles/global';
+
 import { Container } from './styles';
 
 interface MainContainerProps {

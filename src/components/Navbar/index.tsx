@@ -1,8 +1,11 @@
-import { useContext, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useContext, useRef, useState } from 'react';
 import { DefaultTheme, ThemeContext } from 'styled-components';
+
 import { CloseIcon, NavbarIcon } from '../Icons';
+
 import ThemeSwitcherBtn from '../MobileThemeSwitcherBtn/MobileThemeSwitcherBtn';
+
 import {
   Button,
   Container,
