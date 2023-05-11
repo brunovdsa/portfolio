@@ -93,8 +93,12 @@ export default function About() {
                       <span>
                         <a target='_blank' href='https://github.com/brunovdsa'>
                           {' '}
-                          GitHub.
+                          GitHub
                         </a>
+                      </span>
+                      , or you can contact me
+                      <span>
+                        <Link to={'/contact'}> here</Link>
                       </span>
                     </Info>
                     <Info>
