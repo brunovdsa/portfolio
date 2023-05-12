@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  height: 100vh;
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-
+  transition: 1.3s;
   color: ${(props) => props.theme.colors.text};
   background: ${(props) => props.theme.colors.background};
   border-radius: 25px;
@@ -16,19 +15,39 @@ export const Form = styled.form`
 
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
-  width: 100%;
-  min-width: 99%;
+  width: 90vw;
 
-  height: 70%;
+  height: 75%;
   margin: 4rem 0;
-  padding: 2rem;
+  padding: 4rem 2.3rem;
 
-  gap: 1rem;
+  gap: 1.5rem;
+
+  input {
+    background: ${(props) => props.theme.colors.background};
+    border-radius: 10px;
+    border: none;
+    padding: 1.3rem 1rem 1.3rem 1rem;
+
+    color: ${(props) => props.theme.colors.text};
+    outline: none;
+
+    ::placeholder {
+      color: ${(props) => props.theme.colors.text};
+      opacity: 70%;
+    }
+
+    :focus {
+      box-shadow: 1px 8px 15px 0 ${(props) => props.theme.colors.box_shadow};
+      transition: 0.3s;
+    }
+  }
 `;
 
 export const AboutPerson = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 
   @media (min-width: 1100px) {
     display: flex;
@@ -39,12 +58,31 @@ export const AboutPerson = styled.div`
 export const AboutEmail = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+`;
 
-  gap: 1rem;
+export const FooterForm = styled.div`
+  margin: 2rem 0;
+`;
 
-  input {
-    background: ${(props) => props.theme.colors.background};
-    border-radius: 10px;
-    border: none;
+export const SendMessageBtn = styled.button`
+  cursor: pointer;
+  font-size: ${(props) => props.theme.font_size.md};
+  font-weight: ${(props) => props.theme.font_weight.bold};
+  color: ${(props) => props.theme.colors.text};
+  background: ${(props) => props.theme.colors.background};
+
+  transition: 0.2s;
+  width: 100%;
+
+  height: 3.5rem;
+
+  background: ${(props) => props.theme.colors.background};
+  border-radius: 25px;
+  border: none;
+
+  &:hover {
+    box-shadow: 1px 8px 15px 0 ${(props) => props.theme.colors.box_shadow};
+    transition: 0.3s;
   }
 `;
