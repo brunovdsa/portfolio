@@ -6,8 +6,8 @@ export const Container = styled.main`
   align-items: center;
   flex-direction: column;
 
-  padding: 1rem 1rem;
-  height: 100vh;
+  padding: 1rem 1rem 5rem;
+  height: 100%;
 
   @media (min-width: 1100px) {
     padding: 1rem 12rem;

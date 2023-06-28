@@ -2,6 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const MainTitle = styled.h1`
+  font-size: ${(props) => props.theme.font_size.xlg};
+  color: ${(props) => props.theme.colors.text};
+
+  margin: 2rem 0 0;
 `;
 
 export const Form = styled.form`
@@ -18,16 +27,18 @@ export const Form = styled.form`
   width: 90vw;
 
   height: 75%;
-  margin: 4rem 0;
+  margin: 3rem 0;
   padding: 4rem 2.3rem;
 
   gap: 1.5rem;
 
-  input {
+  input,
+  textarea {
     background: ${(props) => props.theme.colors.background};
     border-radius: 10px;
     border: none;
     padding: 1.3rem 1rem 1.3rem 1rem;
+    resize: vertical;
 
     color: ${(props) => props.theme.colors.text};
     outline: none;
