@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   scroll-behavior: smooth;
   margin: 0;
-  color: ${(props) => props.theme.colors.text};
-
   background: ${(props) => props.theme.colors.background_800};
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;

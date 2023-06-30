@@ -5,7 +5,7 @@ import Card from '../../components/BlurCard';
 import Section from '../../components/Section';
 import { MainContainer } from '../../components/MainContainer';
 
-import me from '../../assets/img/me.jpeg';
+import me from '../../assets/img/me.webp';
 
 import {
   AboutContainer,

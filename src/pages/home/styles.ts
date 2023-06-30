@@ -21,7 +21,7 @@ export const Intro = styled.div`
 export const Img = styled.img`
   height: 12rem;
   border-radius: 100%;
-  margin: 0 0 1rem;
+  margin: 0 0 3rem;
 
   @media (min-width: 1100px) {
     height: 18rem;
@@ -39,7 +39,7 @@ export const Title = styled.h1`
   font-weight: ${(props) => props.theme.font_weight.bold};
 
   span {
-    color: ${(props) => props.theme.colors.success};
+    color: ${(props) => props.theme.colors.caption_400};
   }
 `;
 

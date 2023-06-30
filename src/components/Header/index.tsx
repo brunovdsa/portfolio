@@ -30,6 +30,7 @@ export function Header(props: HeaderProps) {
           <Link to={'/'}>Home</Link>
           <Link to={'/projects'}>Projects</Link>
           <Link to={'/experience'}>Experience</Link>
+          <Link to={'/contact'}>Contact</Link>
           <Link to={'/about'}>About</Link>
         </Nav>
       </DesktopNavbar>

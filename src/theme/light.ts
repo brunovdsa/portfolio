@@ -6,7 +6,8 @@ export default {
       'linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2))',
     background_700:
       'linear-gradient(135deg, rgba(255, 255, 255, 0.51), rgba(255, 255, 255, 0))',
-    background_800: 'linear-gradient(-45deg, #FFCEFE, #AEA2FF , #7286D3)',
+    background_800:
+      'linear-gradient(-45deg,#c9c9c9, #cecece, #d4d4d4, #d9d9d9, #dfdfdf, #e2e2e2, #e6e6e6, #e9e9e9, #ebebeb, #ecedec, #eeeeee, #f0f0f0)',
 
     text: '#333',
     text_overlay: '#F5F5F5',
@@ -14,7 +15,7 @@ export default {
       'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))',
     box_shadow: 'rgba(0, 0, 0, 0.17)',
 
-    caption_400: '#a1a1aa',
+    caption_400: '#7A7A7A',
     caption_600: '#6c6c70',
 
     success: '#00b7a6',

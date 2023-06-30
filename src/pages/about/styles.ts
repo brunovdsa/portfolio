@@ -11,6 +11,7 @@ export const Container = styled.main`
 
   @media (min-width: 1100px) {
     padding: 1rem 12rem;
+    height: 100vh;
   }
 `;
 
@@ -53,7 +54,7 @@ export const Info = styled.p`
   a {
     text-decoration: none;
     font-weight: ${(props) => props.theme.font_weight.bold};
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.caption_400};
 
     transition: 0.2s;
 
@@ -63,12 +64,12 @@ export const Info = styled.p`
   }
 
   span {
-    color: ${(props) => props.theme.colors.success};
+    color: ${(props) => props.theme.colors.caption_400};
     font-weight: ${(props) => props.theme.font_weight.bold};
 
     a {
       text-decoration: none;
-      color: ${(props) => props.theme.colors.text};
+      color: ${(props) => props.theme.colors.caption_400};
 
       transition: 0.2s;
 

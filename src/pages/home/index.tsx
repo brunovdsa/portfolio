@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Section from '../../components/Section';
 import { MainContainer } from '../../components/MainContainer';
 
-import img from '../../assets/img/me.png';
+import img from '../../assets/img/me.webp';
 
 import {
   Img,

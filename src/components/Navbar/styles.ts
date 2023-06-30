@@ -28,7 +28,7 @@ export const Nav = styled.nav`
   flex-direction: column;
   position: fixed;
   top: 1rem;
-  height: 17rem;
+  height: 20rem;
   width: 65%;
   padding: 1rem;
   background-color: ${(props) => props.theme.colors.background_700};

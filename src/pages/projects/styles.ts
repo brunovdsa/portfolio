@@ -4,8 +4,9 @@ export const CardsContainer = styled.div`
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  @media (min-width: 1100px) {
-    gap: 1rem;
+
+  div:last-child {
+    margin-bottom: 3rem;
   }
 `;
 

@@ -23,7 +23,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 55% 45%;
     padding: 4rem 2rem;
-    margin: 3rem 12rem;
+    margin: 3rem 12rem 0;
   }
 `;
 
