@@ -15,7 +15,9 @@ import {
 
 interface HeaderProps {
   toggleTheme(): void;
+  handleSelect(e: any): void;
   theme: DefaultTheme;
+  language: any;
 }
 
 export function Header(props: HeaderProps) {
@@ -39,6 +41,10 @@ export function Header(props: HeaderProps) {
           toggleTheme={props.toggleTheme}
           title={props.theme.title}
         />
+        <select onChange={props.handleSelect} value={props.language}>
+          <option value={'pt-BR'}>pt-BR</option>
+          <option value={'en-US'}>en-US</option>
+        </select>
       </ThemeSwitcherContainer>
       <MobileNavbar>
         <Navbar toggleTheme={props.toggleTheme} theme={props.theme} />

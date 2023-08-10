@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+import { i18n } from '../../translate/i18n';
+
 import Section from '../../components/Section';
 import { MainContainer } from '../../components/MainContainer';
 
@@ -30,21 +32,20 @@ export default function Home() {
             <Img src={img} />
             <About>
               <Title>
-                Hi! I'm <span>Bruno</span>. I'm a junior frontend developer.
+                {i18n.t('homePageTitles.pt1')}{' '}
+                <span>{i18n.t('homePageTitles.pt2')}. </span>
+                {i18n.t('homePageTitles.pt3')}
               </Title>
-              <Description>
-                I like to craft solid frontend products with grate user
-                experiences.
-              </Description>
+              <Description>{i18n.t('homePageDescription.text')}</Description>
               <Links>
                 <ProjectsBtn>
                   <Link to={'/projects'} className='project-btn'>
-                    Projects
+                    {i18n.t('homePageButtons.homePageToProject')}
                   </Link>
                 </ProjectsBtn>
                 <AboutBtn>
                   <Link to={'/about'} className='about-btn'>
-                    More about me
+                    {i18n.t('homePageButtons.homePageToAbout')}
                   </Link>
                 </AboutBtn>
               </Links>
