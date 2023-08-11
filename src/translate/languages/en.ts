@@ -17,6 +17,22 @@ const messages = {
         titlePT: 'Portuguese',
         titleEN: 'English',
       },
+      header: {
+        headerHomeLink: 'Home',
+        headerProjectsLink: 'Projects',
+        headerExperienceLink: 'Experience',
+        headerContactLink: 'Contact',
+        headerAboutLink: 'About',
+      },
+      navBarComponent: {
+        navLinkHome: 'Home',
+        navLinkProjects: 'Projects',
+        navLinkExperience: 'Experience',
+        navLinkContact: 'Contact',
+        navLinkAbout: 'About',
+        changeThemeBtnPt1: 'Change to ',
+        changeThemeBtnPt2: ' theme',
+      },
     },
   },
 };

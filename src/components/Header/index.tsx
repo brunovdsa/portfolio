@@ -12,6 +12,7 @@ import {
   Nav,
   ThemeSwitcherContainer,
 } from './styles';
+import { i18n } from '../../translate/i18n';
 
 interface HeaderProps {
   toggleTheme(): void;
@@ -27,11 +28,13 @@ export function Header(props: HeaderProps) {
 
       <DesktopNavbar>
         <Nav>
-          <Link to={'/'}>Home</Link>
-          <Link to={'/projects'}>Projects</Link>
-          <Link to={'/experience'}>Experience</Link>
-          <Link to={'/contact'}>Contact</Link>
-          <Link to={'/about'}>About</Link>
+          <Link to={'/'}>{i18n.t('header.headerHomeLink')}</Link>
+          <Link to={'/projects'}>{i18n.t('header.headerProjectsLink')}</Link>
+          <Link to={'/experience'}>
+            {i18n.t('header.headerExperienceLink')}
+          </Link>
+          <Link to={'/contact'}>{i18n.t('header.headerContactLink')}</Link>
+          <Link to={'/about'}>{i18n.t('header.headerAboutLink')}</Link>
         </Nav>
       </DesktopNavbar>
       <ThemeSwitcherContainer>

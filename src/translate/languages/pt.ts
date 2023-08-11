@@ -17,6 +17,22 @@ const messages = {
         titlePT: 'Português',
         titleEN: 'Inglês',
       },
+      header: {
+        headerHomeLink: 'Início',
+        headerProjectsLink: 'Projetos',
+        headerExperienceLink: 'Experiência',
+        headerContactLink: 'Contato',
+        headerAboutLink: 'Sobre mim',
+      },
+      navBarComponent: {
+        navLinkHome: 'Início',
+        navLinkProjects: 'Projetos',
+        navLinkExperience: 'Experiência',
+        navLinkContact: 'Contato',
+        navLinkAbout: 'Sobre mim',
+        changeThemeBtnPt1: 'Mude para ',
+        changeThemeBtnPt2: ' theme',
+      },
     },
   },
 };

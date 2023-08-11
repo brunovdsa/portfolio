@@ -1,6 +1,6 @@
 import { Container, Select, Option } from './styles';
 import { i18n } from '../../translate/i18n';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { GlobeIcon } from '../Icons';
 
 interface ChooseLanguageBarProps {

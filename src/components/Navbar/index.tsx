@@ -16,6 +16,7 @@ import {
   BackgroundOverlay,
   ThemeSwitcherContainer,
 } from './styles';
+import { i18n } from '../../translate/i18n';
 
 interface NavbarProps {
   toggleTheme(): void;
@@ -47,7 +48,7 @@ export default function Navbar(props: NavbarProps) {
       >
         <NavHeader>
           <Link to={'/'} onClick={onClick}>
-            Home
+            {i18n.t('navBarComponent.navLinkHome')}
           </Link>
           <Button onClick={onClick}>
             <CloseIcon />
@@ -56,16 +57,16 @@ export default function Navbar(props: NavbarProps) {
 
         <NavContent>
           <Link to={'/projects'} onClick={onClick}>
-            Projects
+            {i18n.t('navBarComponent.navLinkProjects')}
           </Link>
           <Link to={'/experience'} onClick={onClick}>
-            Experience
+            {i18n.t('navBarComponent.navLinkExperience')}
           </Link>
           <Link to={'/contact'} onClick={onClick}>
-            Contact
+            {i18n.t('navBarComponent.navLinkContact')}
           </Link>
           <Link to={'/about'} onClick={onClick}>
-            About
+            {i18n.t('navBarComponent.navLinkAbout')}
           </Link>
         </NavContent>
 

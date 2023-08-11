@@ -1,3 +1,4 @@
+import { i18n } from '../../translate/i18n';
 import { MoonIcon, SunIcon } from '../Icons';
 
 import { ThemeSwitcher, Icon, Content } from './styles';
@@ -12,7 +13,9 @@ export default function MobileThemeSwitcherBtn(props: ThemeSwitcherBtnProps) {
     <ThemeSwitcher onClick={props.toggleTheme}>
       <Icon>{props.title === 'light' ? <MoonIcon /> : <SunIcon />}</Icon>
       <Content>
-        Change to {props.title === 'light' ? 'dark' : 'light'} theme
+        {i18n.t('navBarComponent.changeThemeBtnPt1')}
+        {props.title === 'light' ? 'dark' : 'light'}
+        {i18n.t('navBarComponent.changeThemeBtnPt2')}
       </Content>
     </ThemeSwitcher>
   );
