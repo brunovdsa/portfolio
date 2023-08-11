@@ -18,6 +18,7 @@ import {
   Title,
   VisitBtn,
 } from './styles';
+import { i18n } from '../../translate/i18n';
 
 interface CardProps {
   name: string;
@@ -50,7 +51,7 @@ export default function ProjectCard(props: CardProps) {
           <Title>{props.name}</Title>
           <Description>{props.description}</Description>
           <Techs>
-            <MadeWith>Made using:</MadeWith>
+            <MadeWith>{i18n.t('projectsPage.madeUsing')}</MadeWith>
             <List>
               {props.techs.map((tech) => (
                 <ItemsList key={tech}>{tech}</ItemsList>
@@ -58,7 +59,10 @@ export default function ProjectCard(props: CardProps) {
             </List>
           </Techs>
 
-          <VisitBtn href={props.appUrl}> Visit {props.name}</VisitBtn>
+          <VisitBtn href={props.appUrl}>
+            {' '}
+            {i18n.t('projectsPage.visitProject')} {props.name}
+          </VisitBtn>
           <RepositoryBtn href={props.repoUrl}>
             <GitHubIcon />
           </RepositoryBtn>
@@ -67,12 +71,12 @@ export default function ProjectCard(props: CardProps) {
           <Img
             src={props.imgUrl}
             loading='lazy'
-            alt={`Photo of project: ${props.name}`}
+            alt={`${i18n.t('projectsPage.altText')} ${props.name}`}
           />
           <ImgMobile
             src={props.imgMobileUrl}
             loading='lazy'
-            alt={`Photo of project: ${props.name}`}
+            alt={`${i18n.t('projectsPage.altText')} ${props.name}`}
           />
         </ImgContainer>
       </Container>

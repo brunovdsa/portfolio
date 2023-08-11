@@ -12,13 +12,14 @@ import stockexchange from '../../assets/img/stockexchange.png';
 import stockexchangefhd from '../../assets/img/stockexchangefhd.png';
 
 import { CardsContainer, MainTitle } from './styles';
+import { i18n } from '../../translate/i18n';
 
 export default function Projects() {
   return (
     <MainContainer>
       <>
         <Section>
-          <MainTitle>A selection of my favorite works.</MainTitle>
+          <MainTitle>{i18n.t('projectsPage.title')}</MainTitle>
         </Section>
         <Section>
           <CardsContainer
@@ -29,9 +30,7 @@ export default function Projects() {
           >
             <ProjectCard
               name={'Cooked'}
-              description={
-                'Cooked is a recipe website, that allows you to search, and find out how your favorite recipe is done.'
-              }
+              description={i18n.t('projectsPage.coockedDescription')}
               appUrl={'https://cooked.vercel.app/'}
               techs={['React', 'TypeScript', 'Sass', 'HeadlessUi']}
               imgUrl={cookedfhd}
@@ -40,9 +39,7 @@ export default function Projects() {
             />
             <ProjectCard
               name={'Stock Photos'}
-              description={
-                'A place for you to find and download free photos and images, taken from people for all over the wolrd.'
-              }
+              description={i18n.t('projectsPage.stockPhotosDescription')}
               appUrl={'https://stockphotos.vercel.app/'}
               techs={['React', 'styled-components', 'Next.js']}
               imgUrl={photostockfhd}
@@ -51,9 +48,7 @@ export default function Projects() {
             />
             <ProjectCard
               name={'Stock Exchange'}
-              description={
-                'A plataform to search and compare revenue, expenses, profit and EBITDA from the selected company, using graphics.'
-              }
+              description={i18n.t('projectsPage.stockExchangeDescription')}
               appUrl={'https://stockexchanges.vercel.app/'}
               techs={['React', 'TypeScript', 'Sass', 'GoogleCharts']}
               imgUrl={stockexchangefhd}

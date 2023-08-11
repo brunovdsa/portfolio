@@ -4,7 +4,7 @@ import { DefaultTheme, ThemeContext } from 'styled-components';
 
 import { CloseIcon, NavbarIcon } from '../Icons';
 
-import ThemeSwitcherBtn from '../MobileThemeSwitcherBtn/MobileThemeSwitcherBtn';
+import ThemeSwitcherBtn from '../MobileThemeSwitcherBtn';
 
 import {
   Button,

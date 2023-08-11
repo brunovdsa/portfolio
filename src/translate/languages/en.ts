@@ -33,6 +33,18 @@ const messages = {
         changeThemeBtnPt1: 'Change to ',
         changeThemeBtnPt2: ' theme',
       },
+      projectsPage: {
+        title: 'A selection of my favorite works.',
+        coockedDescription:
+          'Cooked is a recipe website, that allows you to search, and find out how your favorite recipe is done.',
+        stockPhotosDescription:
+          'A place for you to find and download free photos and images, taken from people for all over the wolrd.',
+        stockExchangeDescription:
+          'A plataform to search and compare revenue, expenses, profit and EBITDA from the selected company, using graphics.',
+        madeUsing: 'Developed using: ',
+        visitProject: 'Visit ',
+        altText: 'Photo showing the project: ',
+      },
     },
   },
 };

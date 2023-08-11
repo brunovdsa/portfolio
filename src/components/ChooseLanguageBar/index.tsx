@@ -1,6 +1,6 @@
 import { Container, Select, Option } from './styles';
 import { i18n } from '../../translate/i18n';
-import { useState } from 'react';
+
 import { GlobeIcon } from '../Icons';
 
 interface ChooseLanguageBarProps {
@@ -9,8 +9,6 @@ interface ChooseLanguageBarProps {
 }
 
 export function ChooseLanguageBar(props: ChooseLanguageBarProps) {
-  const [isActive, setIsActive] = useState<boolean>(false);
-
   return (
     <Container>
       <GlobeIcon />
