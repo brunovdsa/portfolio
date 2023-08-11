@@ -16,6 +16,7 @@ import {
   Info,
   HeaderContent,
 } from './styles';
+import { i18n } from '../../translate/i18n';
 
 export default function About() {
   return (
@@ -32,77 +33,75 @@ export default function About() {
               <AboutContainer>
                 <Content>
                   <Info>
-                    I'm Bruno, a developer & <span>creative coder</span> who
-                    specializes in front-end development. My mission is to
-                    translate user-focussed designs into beautiful websites or
-                    applications.
+                    {i18n.t('aboutPage.introInfo.pt1')}
+                    <span>{i18n.t('aboutPage.introInfo.pt2')}</span>
+                    {i18n.t('aboutPage.introInfo.pt3')}
                   </Info>
-                  <Info>
-                    I'm currently looking for an oportunity to use my knoledge
-                    and experience to help the user and the team I'm part of.
-                  </Info>
+                  <Info>{i18n.t('aboutPage.introInfo.pt4')}</Info>
                   <HeaderContent>
-                    <Img src={me} />
+                    <Img
+                      src={me}
+                      alt={i18n.t('aboutPage.contentInfo.altTextImg')}
+                    />
                     <Info>
-                      In my last experience, I worked as a junior full-stack
-                      developer for the retail segment at
+                      {i18n.t('aboutPage.contentInfo.pt1')}
                       <span>
                         <a target='_blank' href='https://1worldsync.com/br/'>
                           {' '}
-                          1WorldSyncBR
+                          {i18n.t('aboutPage.contentInfo.pt2')}
                         </a>
                       </span>
-                      . Where I helped to maintain, and create new
-                      functionalities to the main product, that consists in a
-                      plataform that provides content solutions for products.
+                      {i18n.t('aboutPage.contentInfo.pt3')}
                     </Info>
                     <Info>
-                      Before{' '}
+                      {i18n.t('aboutPage.contentInfo.pt4')}
                       <span>
                         <a target='_blank' href='https://1worldsync.com/br/'>
                           {' '}
-                          1WorldSyncBR
+                          {i18n.t('aboutPage.contentInfo.pt5')}
                         </a>
                       </span>
-                      , I worked at
+                      {i18n.t('aboutPage.contentInfo.pt6')}
                       <span>
                         <a target='_blank' href='https://opentechgr.com.br/'>
                           {' '}
-                          OpenTech
+                          {i18n.t('aboutPage.contentInfo.pt7')}
                         </a>
                       </span>
-                      . First, as a process assistant automating decision-making
-                      processes of the truck tracking system. And later on,
-                      became a junior front-end developer, helping to give
-                      maintenance to the logistic system the comapany uses.
+                      {i18n.t('aboutPage.contentInfo.pt8')}
                     </Info>
                     <Info>
-                      You can find me on
+                      {i18n.t('aboutPage.contentInfo.pt9')}
                       <span>
                         <a
                           target='_blank'
                           href='https://www.linkedin.com/in/brunovdsa/'
                         >
                           {' '}
-                          Linkedin
+                          {i18n.t('aboutPage.contentInfo.pt10')}
                         </a>
                       </span>
-                      , where I keep all my professional data up to date, and
-                      where I share and update projects. You can also follow me
-                      on
+                      {i18n.t('aboutPage.contentInfo.pt11')}
                       <span>
                         <a target='_blank' href='https://github.com/brunovdsa'>
                           {' '}
-                          GitHub
+                          {i18n.t('aboutPage.contentInfo.pt12')}
                         </a>
                       </span>
-                      , or you can contact me
+                      {i18n.t('aboutPage.contentInfo.pt13')}
                       <span>
-                        <Link to={'/contact'}> here</Link>
+                        <Link to={'/contact'}>
+                          {' '}
+                          {i18n.t('aboutPage.contentInfo.pt14')}
+                        </Link>
                       </span>
                     </Info>
                     <Info>
-                      See all my journey <Link to={'/experience'}>here</Link>.
+                      {i18n.t('aboutPage.contentInfo.pt15')}
+                      <Link to={'/experience'}>
+                        {i18n.t('aboutPage.contentInfo.pt16')}
+                      </Link>
+                      .
                     </Info>
                   </HeaderContent>
                 </Content>
