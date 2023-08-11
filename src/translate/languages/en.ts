@@ -13,6 +13,10 @@ const messages = {
         homePageToProject: 'Projects',
         homePageToAbout: 'More about me',
       },
+      chooseLanguageBar: {
+        titlePT: 'Portuguese',
+        titleEN: 'English',
+      },
     },
   },
 };

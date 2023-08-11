@@ -10,6 +10,7 @@ import GlobalStyle from '../../assets/styles/global';
 
 import { Container } from './styles';
 import { useState } from 'react';
+import { ChooseLanguageBar } from '../ChooseLanguageBar';
 
 interface MainContainerProps {
   children: JSX.Element;
@@ -21,13 +22,16 @@ const I18N_STORAGE_KEY = 'i18nextLng';
 
 export function MainContainer(props: MainContainerProps) {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark);
-  const [language] = useState<any>(localStorage.getItem(I18N_STORAGE_KEY));
+  const [language, setLanguage] = useState<any>(
+    localStorage.getItem(I18N_STORAGE_KEY)
+  );
 
   const toggleTheme = () => {
     setTheme(theme.title === 'dark' ? light : dark);
   };
 
   const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setLanguage(language === 'pt-BR' ? 'en-US' : 'pt-BR');
     localStorage.setItem(I18N_STORAGE_KEY, e.target.value);
     window.location = window.location;
   };
@@ -36,12 +40,8 @@ export function MainContainer(props: MainContainerProps) {
     <ThemeProvider theme={theme}>
       <Container>
         <GlobalStyle />
-        <Header
-          toggleTheme={toggleTheme}
-          theme={theme}
-          handleSelect={handleSelect}
-          language={language}
-        />
+        <ChooseLanguageBar handleSelect={handleSelect} language={language} />
+        <Header toggleTheme={toggleTheme} theme={theme} />
         <div>{props.children}</div>
       </Container>
     </ThemeProvider>

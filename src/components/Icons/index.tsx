@@ -6,6 +6,7 @@ import {
   faMoon,
   faSun,
   faXmark,
+  faGlobe,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -38,4 +39,7 @@ export function SunIcon() {
 }
 export function GitHubIcon() {
   return <FontAwesomeIcon icon={faGithub} />;
+}
+export function GlobeIcon() {
+  return <FontAwesomeIcon icon={faGlobe} />;
 }
