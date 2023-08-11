@@ -2,12 +2,13 @@ import { motion } from 'framer-motion';
 import ExperienceCard from '../../components/ExperienceCard';
 import { MainContainer } from '../../components/MainContainer';
 import { CardsContainer, Container, Title } from './styles';
+import { i18n } from '../../translate/i18n';
 
 export default function WorkExperience() {
   return (
     <MainContainer>
       <Container>
-        <Title>Work Experience</Title>
+        <Title>{i18n.t('experiencePage.title')}</Title>
 
         <CardsContainer
           as={motion.div}
@@ -16,12 +17,10 @@ export default function WorkExperience() {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <ExperienceCard
-            company={'1WorldSyncBR'}
-            jobTitle={'Junior Full-Stack Developer'}
+            company={i18n.t('experiencePage.company1')}
+            jobTitle={i18n.t('experiencePage.jobTitle1')}
             years={'2021 - 2021'}
-            description={
-              'For the retail segment, the developer had the duty to always deliver the best quality information and images, in relation to the product, which will later be used by the final client. With good practices, clean codes and easy maintenance. Contact with internal and external customers through voice and video calls, mostly in English due to the wide variety of people from outside the country involved in the projects.'
-            }
+            description={i18n.t('experiencePage.description1')}
             techs={[
               'AngularJs',
               'Angular 11+',
@@ -32,12 +31,10 @@ export default function WorkExperience() {
             ]}
           />
           <ExperienceCard
-            company={'Opentech Logistics and Risk Management Solutions'}
-            jobTitle={'Junior Front-End Developer'}
+            company={i18n.t('experiencePage.company2')}
+            jobTitle={i18n.t('experiencePage.jobTitle2')}
             years={'2020 - 2021'}
-            description={
-              'Development of solutions for the risk management and vehicle tracking segment. Working with maintenance of the logistics system for the company, creating new pages and functionalities for the end user. Applying concepts of mobile first and great UX design. Started in a legacy system, using jQuery and bootstrap as main tools, and later changed to the main product, using React.'
-            }
+            description={i18n.t('experiencePage.description2')}
             techs={[
               'Bootstrap',
               'C#',
@@ -52,12 +49,10 @@ export default function WorkExperience() {
             ]}
           />
           <ExperienceCard
-            company={'Opentech Logistics and Risk Management Solutions'}
-            jobTitle={'Process Assistant'}
+            company={i18n.t('experiencePage.company3')}
+            jobTitle={i18n.t('experiencePage.jobTitle3')}
             years={'2019 - 2020'}
-            description={
-              'Used a front-end platform, automating processes of the tracking and registration areas of the company. Direct contact with internal and external customers by e-mail for alignment of business rules.'
-            }
+            description={i18n.t('experiencePage.description3')}
             techs={[
               'BOT',
               'Flowcharts',
@@ -68,13 +63,11 @@ export default function WorkExperience() {
             ]}
           />
           <ExperienceCard
-            company={'Opentech Logistics and Risk Management Solutions'}
-            jobTitle={'Tracking Operator'}
+            company={i18n.t('experiencePage.company4')}
+            jobTitle={i18n.t('experiencePage.jobTitle4')}
             years={'2018 - 2019'}
-            description={
-              'Carrying out satellite and GPRS tracking of small, medium and large vehicle trips. Customer service via email and phone, maintaining constant communication throughout the trip, always checking the status of the trip as a whole, from your place of departure to arrival.'
-            }
-            techs={['Internal Systems', 'Zendesk']}
+            description={i18n.t('experiencePage.description4')}
+            techs={[`${i18n.t('experiencePage.specialTag')}`, 'Zendesk']}
           />
         </CardsContainer>
       </Container>
