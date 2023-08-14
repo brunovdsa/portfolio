@@ -74,6 +74,19 @@ const messages = {
       },
       //CONTACT PAGE TRANSLATION
 
+      contactPage: {
+        title: 'Entre em contato.',
+        contacts: {
+          name: 'Nome',
+          email: 'Email',
+        },
+        emailInfo: {
+          subject: 'Assunto',
+          message: 'Mensagem',
+        },
+        sendMessageBtn: 'Enviar!',
+      },
+
       //ABOUT PAGE TRANSLATION
       aboutPage: {
         title: 'Esta é minha história.',

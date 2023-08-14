@@ -14,6 +14,7 @@ import {
   MainTitle,
   SendMessageBtn,
 } from './styles';
+import { i18n } from '../../translate/i18n';
 
 export default function Contact() {
   const [name, setName] = useState<string>('');
@@ -60,7 +61,7 @@ export default function Contact() {
   return (
     <MainContainer>
       <Container>
-        <MainTitle>Contact</MainTitle>
+        <MainTitle>{i18n.t('contactPage.title')}</MainTitle>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -73,13 +74,13 @@ export default function Contact() {
                 <AboutPerson>
                   <input
                     type='text'
-                    placeholder={'Name'}
+                    placeholder={i18n.t('contactPage.contacts.name')}
                     onChange={(e) => setName(e.target.value)}
                     value={name}
                   />
                   <input
                     type='text'
-                    placeholder={'Email'}
+                    placeholder={i18n.t('contactPage.contacts.email')}
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                   />
@@ -87,18 +88,20 @@ export default function Contact() {
                 <AboutEmail>
                   <input
                     type='text'
-                    placeholder={'Subject'}
+                    placeholder={i18n.t('contactPage.emailInfo.subject')}
                     onChange={(e) => setSubject(e.target.value)}
                     value={subject}
                   />
                   <textarea
-                    placeholder={'Message'}
+                    placeholder={i18n.t('contactPage.emailInfo.message')}
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
                   />
                 </AboutEmail>
                 <FooterForm>
-                  <SendMessageBtn>Send message!</SendMessageBtn>
+                  <SendMessageBtn>
+                    {i18n.t('contactPage.sendMessageBtn')}
+                  </SendMessageBtn>
                 </FooterForm>
               </Form>
             </Container>
