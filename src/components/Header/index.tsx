@@ -29,11 +29,11 @@ export function Header(props: HeaderProps) {
       <DesktopNavbar>
         <Nav>
           <Link to={'/'}>{i18n.t('header.headerHomeLink')}</Link>
-          <Link to={'/about'}>{i18n.t('header.headerAboutLink')}</Link>
           <Link to={'/projects'}>{i18n.t('header.headerProjectsLink')}</Link>
           <Link to={'/experience'}>
             {i18n.t('header.headerExperienceLink')}
           </Link>
+          <Link to={'/about'}>{i18n.t('header.headerAboutLink')}</Link>
           <Link to={'/contact'}>{i18n.t('header.headerContactLink')}</Link>
         </Nav>
       </DesktopNavbar>

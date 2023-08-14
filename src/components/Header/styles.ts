@@ -46,7 +46,7 @@ export const DesktopNavbar = styled.div`
 export const Nav = styled.nav`
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 20% 19% 23% 17% 20%;
   justify-items: center;
 
   a {

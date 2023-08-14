@@ -21,7 +21,7 @@ interface MainContainerProps {
 const I18N_STORAGE_KEY = 'i18nextLng';
 
 export function MainContainer(props: MainContainerProps) {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark);
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
   const [language, setLanguage] = useState<any>(
     localStorage.getItem(I18N_STORAGE_KEY)
   );

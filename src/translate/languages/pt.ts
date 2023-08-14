@@ -10,7 +10,7 @@ const messages = {
         headerProjectsLink: 'Projetos',
         headerExperienceLink: 'Experiência',
         headerContactLink: 'Contato',
-        headerAboutLink: 'Sobre mim',
+        headerAboutLink: 'Sobre',
       },
       //HOME PAGE TRANSLATION
       homePageTitles: {
@@ -30,7 +30,7 @@ const messages = {
         navLinkProjects: 'Projetos',
         navLinkExperience: 'Experiência',
         navLinkContact: 'Contato',
-        navLinkAbout: 'Sobre mim',
+        navLinkAbout: 'Sobre',
         changeThemeBtnPt1: 'Mude para ',
         changeThemeBtnPt2: ' theme',
       },

@@ -28,7 +28,7 @@ export const Form = styled.form`
 
   height: 80%;
   margin: 3rem 0;
-  padding: 4rem 2.3rem;
+  padding: 3rem 2.3rem;
 
   gap: 1.5rem;
 
@@ -65,13 +65,17 @@ export const AboutPerson = styled.div`
   flex-direction: column;
   gap: 1.5rem;
 
+  input {
+    width: 100%;
+  }
+
   @media (min-width: 1100px) {
     display: flex;
     flex-direction: row;
-  }
 
-  input {
-    width: 50%;
+    input {
+      width: 50%;
+    }
   }
 `;
 
