@@ -52,11 +52,7 @@ export default function Projects() {
             />
           </CardsContainer>
         </Section>
-        <BackToTopBtn
-          onClick={function (): void {
-            throw new Error('Function not implemented.');
-          }}
-        />
+        <BackToTopBtn />
       </>
     </MainContainer>
   );
