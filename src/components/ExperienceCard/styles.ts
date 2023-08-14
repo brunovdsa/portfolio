@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   color: ${(props) => props.theme.colors.text};
   font-family: ${(props) => props.theme.font_family.inter};
-  padding: 1rem;
+  padding: 2rem;
+
   max-width: 99%;
 
   @media (min-width: 1100px) {
@@ -21,20 +22,24 @@ export const Header = styled.div`
 `;
 
 export const Company = styled.h1`
-  font-size: ${(props) => props.theme.font_size.lg};
+  font-size: ${(props) => props.theme.font_size.md};
   font-weight: ${(props) => props.theme.font_weight.semi_bold};
   text-decoration: none;
+  margin: 0 0 0.2rem;
 `;
 
 export const JobTitle = styled.span`
   font-size: ${(props) => props.theme.font_size.sm};
-  font-weight: ${(props) => props.theme.font_weight.regular};
+  font-style: italic;
+  font-weight: ${(props) => props.theme.font_weight.semi_bold};
+  margin: 0 0 0.2rem;
 `;
 
 export const Years = styled.span`
   font-size: ${(props) => props.theme.font_size.sm};
-
-  font-weight: ${(props) => props.theme.font_weight.regular};
+  font-style: italic;
+  font-weight: ${(props) => props.theme.font_weight.semi_bold};
+  margin: 0 0 0.2rem;
 `;
 
 export const Content = styled.div`

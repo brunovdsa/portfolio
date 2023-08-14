@@ -49,7 +49,7 @@ const messages = {
       },
       //EXPERIENCE PAGE TRANSLATION
       experiencePage: {
-        title: 'Experiência de Trabalho',
+        title: 'Experiência de Trabalho.',
 
         company1: '1WolrdSync',
         jobTitle1: 'Desenvolvedor Full Stack Java Jr',

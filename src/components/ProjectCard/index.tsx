@@ -7,7 +7,6 @@ import {
   Container,
   Description,
   Img,
-  ImgMobile,
   ImgContainer,
   Info,
   ItemsList,
@@ -25,7 +24,6 @@ interface CardProps {
   description: string;
   techs: string[];
   imgUrl: string;
-  imgMobileUrl: string;
   appUrl: string;
   repoUrl: string;
 }
@@ -70,11 +68,6 @@ export default function ProjectCard(props: CardProps) {
         <ImgContainer>
           <Img
             src={props.imgUrl}
-            loading='lazy'
-            alt={`${i18n.t('projectsPage.altText')} ${props.name}`}
-          />
-          <ImgMobile
-            src={props.imgMobileUrl}
             loading='lazy'
             alt={`${i18n.t('projectsPage.altText')} ${props.name}`}
           />

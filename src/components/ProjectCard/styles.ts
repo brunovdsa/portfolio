@@ -92,20 +92,13 @@ export const ImgContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  display: none;
+  width: 18rem;
+  max-width: fit-content;
 
   @media (min-width: 1100px) {
     width: 100%;
     max-width: fit-content;
     display: flex;
-  }
-`;
-export const ImgMobile = styled.img`
-  width: 18rem;
-  max-width: fit-content;
-
-  @media (min-width: 1100px) {
-    display: none;
   }
 `;
 

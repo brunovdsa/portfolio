@@ -56,6 +56,9 @@ export default function Navbar(props: NavbarProps) {
         </NavHeader>
 
         <NavContent>
+          <Link to={'/about'} onClick={onClick}>
+            {i18n.t('navBarComponent.navLinkAbout')}
+          </Link>
           <Link to={'/projects'} onClick={onClick}>
             {i18n.t('navBarComponent.navLinkProjects')}
           </Link>
@@ -64,9 +67,6 @@ export default function Navbar(props: NavbarProps) {
           </Link>
           <Link to={'/contact'} onClick={onClick}>
             {i18n.t('navBarComponent.navLinkContact')}
-          </Link>
-          <Link to={'/about'} onClick={onClick}>
-            {i18n.t('navBarComponent.navLinkAbout')}
           </Link>
         </NavContent>
 

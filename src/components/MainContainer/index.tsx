@@ -41,10 +41,9 @@ export function MainContainer(props: MainContainerProps) {
     <ThemeProvider theme={theme}>
       <Container>
         <GlobalStyle />
-        <ChooseLanguageBar handleSelect={handleSelect} language={language} />
         <Header toggleTheme={toggleTheme} theme={theme} />
         <div>{props.children}</div>
-        <Footer />
+        <Footer handleSelect={handleSelect} language={language} />
       </Container>
     </ThemeProvider>
   );
