@@ -10,7 +10,6 @@ import GlobalStyle from '../../assets/styles/global';
 
 import { Container } from './styles';
 import { useState } from 'react';
-import { ChooseLanguageBar } from '../ChooseLanguageBar';
 import { Footer } from '../Footer';
 
 interface MainContainerProps {

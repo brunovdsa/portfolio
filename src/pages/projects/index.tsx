@@ -10,6 +10,7 @@ import stockexchangefhd from '../../assets/img/stockexchangefhd.webp';
 
 import { CardsContainer, MainTitle } from './styles';
 import { i18n } from '../../translate/i18n';
+import { BackToTopBtn } from '../../components/BackToTopBtn';
 
 export default function Projects() {
   return (
@@ -51,6 +52,11 @@ export default function Projects() {
             />
           </CardsContainer>
         </Section>
+        <BackToTopBtn
+          onClick={function (): void {
+            throw new Error('Function not implemented.');
+          }}
+        />
       </>
     </MainContainer>
   );

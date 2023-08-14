@@ -3,6 +3,7 @@ import ExperienceCard from '../../components/ExperienceCard';
 import { MainContainer } from '../../components/MainContainer';
 import { CardsContainer, Container, Title } from './styles';
 import { i18n } from '../../translate/i18n';
+import { BackToTopBtn } from '../../components/BackToTopBtn';
 
 export default function WorkExperience() {
   return (
@@ -70,6 +71,7 @@ export default function WorkExperience() {
             techs={[`${i18n.t('experiencePage.specialTag')}`, 'Zendesk']}
           />
         </CardsContainer>
+        <BackToTopBtn />
       </Container>
     </MainContainer>
   );

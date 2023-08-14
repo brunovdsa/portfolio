@@ -7,6 +7,7 @@ import {
   faSun,
   faXmark,
   faGlobe,
+  faCaretUp,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -45,4 +46,7 @@ export function LinkedinIcon() {
 }
 export function GlobeIcon() {
   return <FontAwesomeIcon icon={faGlobe} />;
+}
+export function CaretUpIcon() {
+  return <FontAwesomeIcon icon={faCaretUp} />;
 }
