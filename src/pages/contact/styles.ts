@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@ export const Form = styled.form`
   -webkit-backdrop-filter: blur(100px);
   width: 90vw;
 
-  height: 75%;
+  height: 80%;
   margin: 3rem 0;
   padding: 4rem 2.3rem;
 
@@ -53,6 +53,11 @@ export const Form = styled.form`
       transition: 0.3s;
     }
   }
+
+  @media (min-width: 1100px) {
+    width: 80vw;
+    padding: 4rem 3rem;
+  }
 `;
 
 export const AboutPerson = styled.div`
@@ -64,16 +69,30 @@ export const AboutPerson = styled.div`
     display: flex;
     flex-direction: row;
   }
+
+  input {
+    width: 50%;
+  }
 `;
 
 export const AboutEmail = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  textarea {
+    height: 10rem;
+  }
 `;
 
 export const FooterForm = styled.div`
   margin: 2rem 0;
+
+  @media (min-width: 1100px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const SendMessageBtn = styled.button`
@@ -95,5 +114,10 @@ export const SendMessageBtn = styled.button`
   &:hover {
     box-shadow: 1px 8px 15px 0 ${(props) => props.theme.colors.box_shadow};
     transition: 0.3s;
+  }
+
+  @media (min-width: 1100px) {
+    width: 25%;
+    height: 3.8rem;
   }
 `;
