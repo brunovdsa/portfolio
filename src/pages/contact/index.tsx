@@ -21,13 +21,18 @@ export default function Contact() {
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [subject, setSubject] = useState<string>('');
+  // const [fieldsError, setFieldsError] = useState<boolean>(true);
+  // const [emailError, setEmailError] = useState<boolean>(false);
+  // const [emailErrorType, setEmailErrorType] = useState<string>('');
 
   function sendEmail(e: any) {
     e.preventDefault();
 
     if (name === '' || email === '' || subject === '' || message === '') {
-      alert('Complete all fields');
+      alert('Complete all fields.');
       return;
+    } else {
+      // setFieldsError(false);
     }
 
     const sendEmailParams = {
@@ -51,9 +56,13 @@ export default function Contact() {
           setSubject('');
           setEmail('');
           setMessage('');
+          // setEmailError(false);
+          alert('Email sent! Thank you!');
         },
         (err) => {
-          console.log('Erro: ', err);
+          // setEmailError(true);
+          // setEmailErrorType(err);
+          alert(err);
         }
       );
   }
@@ -70,6 +79,14 @@ export default function Contact() {
         >
           <Section>
             <Container>
+              {/* <div>{fieldsError === true ? <h1>COMPLETE</h1> : ''}</div>
+              <div>
+                {emailError === true ? (
+                  <h1>Erro no envio. Erro: emailErrorType</h1>
+                ) : (
+                  <h1>Email enviado com sucesso! Obrigado!</h1>
+                )}
+              </div> */}
               <Form action='' onSubmit={sendEmail}>
                 <AboutPerson>
                   <input
