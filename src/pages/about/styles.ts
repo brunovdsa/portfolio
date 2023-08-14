@@ -38,10 +38,10 @@ export const AboutContainer = styled.div`
 
 export const Img = styled.img`
   display: none;
-
+  opacity: 95%;
   @media (min-width: 1100px) {
     display: block;
-    width: 15rem;
+    width: 17rem;
     float: left !important;
     margin: 0 1rem 0 0;
   }

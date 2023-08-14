@@ -26,6 +26,10 @@ export const Company = styled.h1`
   font-weight: ${(props) => props.theme.font_weight.semi_bold};
   text-decoration: none;
   margin: 0 0 0.2rem;
+
+  @media (min-width: 1100px) {
+    font-size: ${(props) => props.theme.font_size.lg};
+  }
 `;
 
 export const JobTitle = styled.span`
