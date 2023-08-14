@@ -11,6 +11,7 @@ import GlobalStyle from '../../assets/styles/global';
 import { Container } from './styles';
 import { useState } from 'react';
 import { ChooseLanguageBar } from '../ChooseLanguageBar';
+import { Footer } from '../Footer';
 
 interface MainContainerProps {
   children: JSX.Element;
@@ -43,6 +44,7 @@ export function MainContainer(props: MainContainerProps) {
         <ChooseLanguageBar handleSelect={handleSelect} language={language} />
         <Header toggleTheme={toggleTheme} theme={theme} />
         <div>{props.children}</div>
+        <Footer />
       </Container>
     </ThemeProvider>
   );

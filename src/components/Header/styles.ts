@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 0 1.5rem;
 
   background: ${(props) => props.theme.colors.overlay};
-  box-shadow: 0px 0px 1px 0 ${(props) => props.theme.colors.box_shadow};
+  box-shadow: 0px 0px 0px 0 ${(props) => props.theme.colors.box_shadow};
 
   height: 5rem;
 
