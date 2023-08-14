@@ -22,7 +22,7 @@ export default function About() {
   return (
     <MainContainer>
       <Container>
-        <MainTitle>Here's my story.</MainTitle>
+        <MainTitle>{i18n.t('aboutPage.title')}</MainTitle>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
