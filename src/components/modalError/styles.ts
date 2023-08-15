@@ -8,6 +8,8 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
   position: absolute;
 
@@ -24,7 +26,7 @@ export const Modal = styled.div`
   align-items: center;
   background: ${(props) => props.theme.colors.background};
 
-  height: 20rem;
+  height: 0rem;
   width: 50rem;
 
   border-radius: 50px;
