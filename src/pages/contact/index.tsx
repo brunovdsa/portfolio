@@ -93,9 +93,11 @@ export default function Contact() {
             {fieldsError === true ? (
               <ModalError>
                 <ModalContainer>
-                  <h1>Oops...</h1>
-                  <span>Please fill in all blank fields</span>
-                  <button onClick={handleFieldsError}>Ok!</button>
+                  <h1>{i18n.t('contactPage.modalFieldsError.title')}</h1>
+                  <span>{i18n.t('contactPage.modalFieldsError.text')}</span>
+                  <button onClick={handleFieldsError}>
+                    {i18n.t('contactPage.modalFieldsError.button')}
+                  </button>
                 </ModalContainer>
               </ModalError>
             ) : (
@@ -108,10 +110,14 @@ export default function Contact() {
                 {emailError === true ? (
                   <ModalError>
                     <ModalContainer>
-                      <h1>Oops...</h1>
-                      <span>Ocorreu um erro!</span>
-                      <span>{`Erro: ${emailErrorType}`}</span>
-                      <button onClick={handleEmailError}>Ok!</button>
+                      <h1>{i18n.t('contactPage.modalEmailError.title')}</h1>
+                      <span>{i18n.t('contactPage.modalEmailError.text')}</span>
+                      <span>{`${i18n.t(
+                        'contactPage.modalEmailError.errorType'
+                      )} ${emailErrorType}`}</span>
+                      <button onClick={handleEmailError}>
+                        {i18n.t('contactPage.modalEmailError.button')}
+                      </button>
                     </ModalContainer>
                   </ModalError>
                 ) : (
@@ -122,10 +128,11 @@ export default function Contact() {
                 {emailSent === true ? (
                   <ModalError>
                     <ModalContainer>
-                      <h1>thanko</h1>
-                      <span>2</span>
-                      <span>{`Erro: ${emailErrorType}`}</span>
-                      <button onClick={handleEmailSent}>Ok!</button>
+                      <h1>{i18n.t('contactPage.modalEmailSent.title')}</h1>
+                      <span>{i18n.t('contactPage.modalEmailSent.text')}</span>
+                      <button onClick={handleEmailSent}>
+                        {i18n.t('contactPage.modalEmailSent.button')}
+                      </button>
                     </ModalContainer>
                   </ModalError>
                 ) : (

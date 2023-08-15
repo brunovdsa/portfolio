@@ -89,6 +89,25 @@ const messages = {
           message: 'Mensagem',
         },
         sendMessageBtn: 'Enviar!',
+
+        modalFieldsError: {
+          title: 'Opa...',
+          text: 'Por gentileza preencha todos os campos em branco!',
+          button: 'Ok',
+        },
+
+        modalEmailError: {
+          title: 'Opa...',
+          text: 'Um erro selvagem apareceu!',
+          errorType: 'Erro: ',
+          button: 'Ok',
+        },
+
+        modalEmailSent: {
+          title: 'Email enviado!',
+          text: 'Obrigado por entrar em contato! Nos falaremos em breve!',
+          button: 'Ok',
+        },
       },
 
       //ABOUT PAGE TRANSLATION
