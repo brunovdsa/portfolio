@@ -125,3 +125,44 @@ export const SendMessageBtn = styled.button`
     height: 3.8rem;
   }
 `;
+
+export const ModalContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: ${(props) => props.theme.font_size.xlg};
+    font-weight: ${(props) => props.theme.font_weight.bold};
+    color: ${(props) => props.theme.colors.text};
+  }
+
+  span {
+    font-size: ${(props) => props.theme.font_size.md};
+    font-weight: ${(props) => props.theme.font_weight.light};
+  }
+
+  button {
+    margin: 1rem 0 0;
+    cursor: pointer;
+    font-size: ${(props) => props.theme.font_size.md};
+    font-weight: ${(props) => props.theme.font_weight.bold};
+    color: ${(props) => props.theme.colors.text};
+    background: ${(props) => props.theme.colors.background};
+
+    transition: 0.2s;
+    width: 100%;
+
+    height: 3.5rem;
+
+    background: ${(props) => props.theme.colors.background};
+    border-radius: 25px;
+    border: none;
+
+    &:hover {
+      box-shadow: 1px 8px 15px 0 ${(props) => props.theme.colors.box_shadow};
+      transition: 0.3s;
+    }
+  }
+`;

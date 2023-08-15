@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { delay, motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 import { MainContainer } from '../../components/MainContainer';
@@ -12,28 +12,32 @@ import {
   FooterForm,
   Form,
   MainTitle,
+  ModalContainer,
   SendMessageBtn,
 } from './styles';
 import { i18n } from '../../translate/i18n';
 import { Helmet } from 'react-helmet';
+import { ModalError } from '../../components/modalError';
 
 export default function Contact() {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [subject, setSubject] = useState<string>('');
-  // const [fieldsError, setFieldsError] = useState<boolean>(true);
-  // const [emailError, setEmailError] = useState<boolean>(false);
-  // const [emailErrorType, setEmailErrorType] = useState<string>('');
+  const [fieldsError, setFieldsError] = useState<boolean>(false);
+  const [emailError, setEmailError] = useState<boolean>(false);
+  const [emailSent, setEmailSent] = useState<boolean>(false);
+  const [emailErrorType, setEmailErrorType] = useState<string>('');
 
   function sendEmail(e: any) {
     e.preventDefault();
 
     if (name === '' || email === '' || subject === '' || message === '') {
-      alert('Complete all fields.');
+      setFieldsError(true);
       return;
     } else {
-      // setFieldsError(false);
+      setFieldsError(false);
+      console.log('fields: ' + fieldsError);
     }
 
     const sendEmailParams = {
@@ -57,16 +61,20 @@ export default function Contact() {
           setSubject('');
           setEmail('');
           setMessage('');
-          // setEmailError(false);
-          alert('Email sent! Thank you!');
+          setEmailError(false);
+          setEmailSent(true);
         },
         (err) => {
-          // setEmailError(true);
-          // setEmailErrorType(err);
-          alert(err);
+          setEmailError(true);
+          setEmailSent(false);
+          setEmailErrorType(err);
         }
       );
   }
+
+  const handleFieldsError = () => setFieldsError(!fieldsError);
+  const handleEmailError = () => setEmailError(!emailError);
+  const handleEmailSent = () => setEmailSent(!emailSent);
 
   return (
     <MainContainer>
@@ -81,16 +89,49 @@ export default function Contact() {
           transition={{ duration: 1, delay: 0.9 }}
           style={{ height: '100vh' }}
         >
+          <div onClick={handleFieldsError}>
+            {fieldsError === true ? (
+              <ModalError>
+                <ModalContainer>
+                  <h1>Oops...</h1>
+                  <span>Please fill in all blank fields</span>
+                  <button onClick={handleFieldsError}>Ok!</button>
+                </ModalContainer>
+              </ModalError>
+            ) : (
+              ''
+            )}
+          </div>
           <Section>
             <Container>
-              {/* <div>{fieldsError === true ? <h1>COMPLETE</h1> : ''}</div>
-              <div>
+              <div onClick={handleEmailError}>
                 {emailError === true ? (
-                  <h1>Erro no envio. Erro: emailErrorType</h1>
+                  <ModalError>
+                    <ModalContainer>
+                      <h1>Oops...</h1>
+                      <span>Ocorreu um erro!</span>
+                      <span>{`Erro: ${emailErrorType}`}</span>
+                      <button onClick={handleEmailError}>Ok!</button>
+                    </ModalContainer>
+                  </ModalError>
                 ) : (
-                  <h1>Email enviado com sucesso! Obrigado!</h1>
+                  ''
                 )}
-              </div> */}
+              </div>
+              <div onClick={handleEmailSent}>
+                {emailSent === true ? (
+                  <ModalError>
+                    <ModalContainer>
+                      <h1>thanko</h1>
+                      <span>2</span>
+                      <span>{`Erro: ${emailErrorType}`}</span>
+                      <button onClick={handleEmailSent}>Ok!</button>
+                    </ModalContainer>
+                  </ModalError>
+                ) : (
+                  ''
+                )}
+              </div>
               <Form action='' onSubmit={sendEmail}>
                 <AboutPerson>
                   <input
