@@ -18,6 +18,7 @@ import {
   ProjectsBtn,
   AboutBtn,
 } from './styles';
+import { Helmet } from 'react-helmet';
 
 export default function Home() {
   return (
@@ -27,6 +28,9 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.9 }}
       >
+        <Helmet>
+          <title>{`${i18n.t('homePageTabTitle')} Bruno de Sá`}</title>
+        </Helmet>
         <Section>
           <Intro>
             <Img src={img} />

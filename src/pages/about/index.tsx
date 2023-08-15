@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+import { Helmet } from 'react-helmet';
+
 import Card from '../../components/BlurCard';
 import Section from '../../components/Section';
 import { MainContainer } from '../../components/MainContainer';
@@ -22,6 +24,9 @@ export default function About() {
   return (
     <MainContainer>
       <Container>
+        <Helmet>
+          <title>{`${i18n.t('aboutPageTabTitle')} Bruno de Sá`}</title>
+        </Helmet>
         <MainTitle>{i18n.t('aboutPage.title')}</MainTitle>
         <motion.div
           initial={{ opacity: 0 }}
@@ -36,8 +41,10 @@ export default function About() {
                     {i18n.t('aboutPage.introInfo.pt1')}
                     <span>{i18n.t('aboutPage.introInfo.pt2')}</span>
                     {i18n.t('aboutPage.introInfo.pt3')}
+                    {i18n.t('aboutPage.introInfo.pt4')}
                   </Info>
-                  <Info>{i18n.t('aboutPage.introInfo.pt4')}</Info>
+                  <Info>{i18n.t('aboutPage.introInfo.pt5')}</Info>
+
                   <HeaderContent>
                     <Img
                       src={me}
@@ -55,12 +62,9 @@ export default function About() {
                     </Info>
                     <Info>
                       {i18n.t('aboutPage.contentInfo.pt4')}
-                      <span>
-                        <a target='_blank' href='https://1worldsync.com/br/'>
-                          {' '}
-                          {i18n.t('aboutPage.contentInfo.pt5')}
-                        </a>
-                      </span>
+
+                      {i18n.t('aboutPage.contentInfo.pt5')}
+
                       {i18n.t('aboutPage.contentInfo.pt6')}
                       <span>
                         <a target='_blank' href='https://opentechgr.com.br/'>

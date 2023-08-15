@@ -4,11 +4,15 @@ import { MainContainer } from '../../components/MainContainer';
 import { CardsContainer, Container, Title } from './styles';
 import { i18n } from '../../translate/i18n';
 import { BackToTopBtn } from '../../components/BackToTopBtn';
+import { Helmet } from 'react-helmet';
 
 export default function WorkExperience() {
   return (
     <MainContainer>
       <Container>
+        <Helmet>
+          <title>{`${i18n.t('experienceTabTitle')} Bruno de Sá`}</title>
+        </Helmet>
         <Title>{i18n.t('experiencePage.title')}</Title>
 
         <CardsContainer

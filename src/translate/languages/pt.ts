@@ -13,6 +13,8 @@ const messages = {
         headerAboutLink: 'Sobre',
       },
       //HOME PAGE TRANSLATION
+      homePageTabTitle: 'Início - ',
+
       homePageTitles: {
         pt1: 'Oi! Me chamo ',
         pt2: 'Bruno',
@@ -35,6 +37,7 @@ const messages = {
         changeThemeBtnPt2: ' theme',
       },
       //PROJECTS PAGE TRANSLATION
+      projectsPageTabTitle: 'Projetos - ',
       projectsPage: {
         title: 'Uma seleção dos meus melhores trabalhos.',
         coockedDescription:
@@ -48,6 +51,7 @@ const messages = {
         altText: 'Fotografia mostrando o projeto: ',
       },
       //EXPERIENCE PAGE TRANSLATION
+      experienceTabTitle: 'Experiência - ',
       experiencePage: {
         title: 'Experiência de Trabalho.',
 
@@ -73,7 +77,7 @@ const messages = {
         specialTag: 'Sistemas Internos',
       },
       //CONTACT PAGE TRANSLATION
-
+      contactPageTabTitle: 'Contato - ',
       contactPage: {
         title: 'Entre em contato.',
         contacts: {
@@ -88,13 +92,15 @@ const messages = {
       },
 
       //ABOUT PAGE TRANSLATION
+      aboutPageTabTitle: 'Sobre - ',
       aboutPage: {
         title: 'Esta é minha história.',
         introInfo: {
           pt1: 'Me chamo Bruno, um desenvolvedor & ',
           pt2: 'creative coder ',
           pt3: 'especializado em desenvolvimento front-end. Minha missão é traduzir designs focados no usuário em lindos sites ou aplicativos.',
-          pt4: 'Atualmente estou procurando uma oportunidade de usar meu conhecimento e experiência para ajudar o usuário e a equipe da qual farei parte.',
+          pt4: ' Também sou fotógrafo e músico nas minhas horas vagas, e levo isso como um hobby e uma forma de me expressar ou de como enxergo o mundo.',
+          pt5: 'Atualmente estou procurando uma oportunidade de usar meu conhecimento e experiência para ajudar o usuário e a equipe da qual farei parte.',
         },
         contentInfo: {
           altTextImg: 'Uma fotografia minha.',

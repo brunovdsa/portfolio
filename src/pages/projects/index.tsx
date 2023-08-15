@@ -11,11 +11,15 @@ import stockexchangefhd from '../../assets/img/stockexchangefhd.webp';
 import { CardsContainer, MainTitle } from './styles';
 import { i18n } from '../../translate/i18n';
 import { BackToTopBtn } from '../../components/BackToTopBtn';
+import { Helmet } from 'react-helmet';
 
 export default function Projects() {
   return (
     <MainContainer>
       <>
+        <Helmet>
+          <title>{`${i18n.t('projectsPageTabTitle')} Bruno de Sá`}</title>
+        </Helmet>
         <Section>
           <MainTitle>{i18n.t('projectsPage.title')}</MainTitle>
         </Section>

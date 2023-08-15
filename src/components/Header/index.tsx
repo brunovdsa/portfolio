@@ -12,6 +12,9 @@ import {
   Nav,
   ThemeSwitcherContainer,
 } from './styles';
+
+import logoDarkTheme from '../../assets/img/logoDarkTheme.png';
+import logoLightTheme from '../../assets/img/logoLightTheme.png';
 import { i18n } from '../../translate/i18n';
 
 interface HeaderProps {
@@ -23,7 +26,13 @@ export function Header(props: HeaderProps) {
   return (
     <Container>
       <Link to={'/'}>
-        <Title>B</Title>
+        <Title>
+          {props.theme.title === 'light' ? (
+            <img src={logoLightTheme} alt='Logo' />
+          ) : (
+            <img src={logoDarkTheme} alt='Logo' />
+          )}
+        </Title>
       </Link>
 
       <DesktopNavbar>

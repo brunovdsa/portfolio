@@ -13,6 +13,8 @@ const messages = {
         headerAboutLink: 'About',
       },
       //HOME PAGE TRANSLATION
+      homePageTabTitle: 'Home - ',
+
       homePageTitles: {
         pt1: "Hi! I'm ",
         pt2: 'Bruno',
@@ -35,6 +37,8 @@ const messages = {
         changeThemeBtnPt2: ' theme',
       },
       //PROJECTS PAGE TRANSLATION
+      projectsPageTabTitle: 'Projects - ',
+
       projectsPage: {
         title: 'A selection of my favorite works.',
         coockedDescription:
@@ -48,6 +52,8 @@ const messages = {
         altText: 'Photo showing the project: ',
       },
       //EXPERIENCE PAGE TRANSLATION
+      experienceTabTitle: 'Experience - ',
+
       experiencePage: {
         title: 'Work Experience.',
 
@@ -73,6 +79,7 @@ const messages = {
         specialTag: 'Internal Systems',
       },
       //CONTACT PAGE TRANSLATION
+      contactPageTabTitle: 'Contact - ',
 
       contactPage: {
         title: 'Contact me.',
@@ -88,13 +95,16 @@ const messages = {
       },
 
       //ABOUT PAGE TRANSLATION
+      aboutPageTabTitle: 'About - ',
+
       aboutPage: {
         title: "Here's my story.",
         introInfo: {
           pt1: "I'm Bruno, a developer & ",
           pt2: 'creative coder ',
           pt3: 'who specializes in front-end development. My mission is to translate user-focussed designs into beautiful websites or applications.',
-          pt4: "I'm currently looking for an oportunity to use my knoledge and experience to help the user and the team I'll be a part of.",
+          pt4: " I'm also a photographer and musician in my spare time, and I take it as a hobby and a way to express myself or how I see the world.",
+          pt5: "I'm currently looking for an oportunity to use my knoledge and experience to help the user and the team I'll be a part of.",
         },
         contentInfo: {
           altTextImg: 'A photograph of myself.',

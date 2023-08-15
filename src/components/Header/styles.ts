@@ -25,14 +25,13 @@ export const Container = styled.div`
   }
 `;
 
-export const Title = styled.h1`
-  color: ${(props) => props.theme.colors.text};
-  font-size: ${(props) => props.theme.font_size.xlg};
-  font-family: ${(props) => props.theme.font_family.monoton};
-  font-weight: ${(props) => props.theme.font_weight.regular};
-  text-decoration: none;
-  rotate: 50deg;
+export const Title = styled.div`
   display: flex;
+
+  img {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 `;
 
 export const DesktopNavbar = styled.div`

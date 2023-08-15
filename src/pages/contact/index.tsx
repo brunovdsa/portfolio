@@ -15,6 +15,7 @@ import {
   SendMessageBtn,
 } from './styles';
 import { i18n } from '../../translate/i18n';
+import { Helmet } from 'react-helmet';
 
 export default function Contact() {
   const [name, setName] = useState<string>('');
@@ -70,6 +71,9 @@ export default function Contact() {
   return (
     <MainContainer>
       <Container>
+        <Helmet>
+          <title>{`${i18n.t('contactPageTabTitle')} Bruno de Sá`}</title>
+        </Helmet>
         <MainTitle>{i18n.t('contactPage.title')}</MainTitle>
         <motion.div
           initial={{ opacity: 0 }}
