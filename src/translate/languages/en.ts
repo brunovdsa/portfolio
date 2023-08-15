@@ -126,7 +126,8 @@ const messages = {
           pt5: "I'm currently looking for an oportunity to use my knoledge and experience to help the user and the team I'll be a part of.",
         },
         contentInfo: {
-          altTextImg: 'A photograph of myself.',
+          altTextImg: 'A photograph of my tattoer, tattoing in his studio.',
+          imgSubtitle: 'A photo taken by me.',
           pt1: 'In my last experience, I worked as a junior full-stack developer for the retail and product segment at ',
           pt2: '1WorldSyncBR',
           pt3: '. Where I helped to maintain, and create new functionalities to the main product, that consists in a plataform that provides content solutions for products.',

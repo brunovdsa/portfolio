@@ -122,7 +122,9 @@ const messages = {
           pt5: 'Atualmente estou procurando uma oportunidade de usar meu conhecimento e experiência para ajudar o usuário e a equipe da qual farei parte.',
         },
         contentInfo: {
-          altTextImg: 'Uma fotografia minha.',
+          altTextImg:
+            'Uma fotografia do meu tatuador, tatuando no estúdio dele.',
+          imgSubtitle: 'Uma fotografia tirada por mim.',
           pt1: 'Em minha última experiência, trabalhei como desenvolvedor full-stack junior para o segmento de varejo e produto na ',
           pt2: '1WorldSyncBR',
           pt3: '. Onde ajudava a manter, e criar novas funcionalidades para o produto principal da empresa, que consiste em uma plataforma que fornece soluções de conteúdo para produtos.',

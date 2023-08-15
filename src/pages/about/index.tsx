@@ -7,7 +7,7 @@ import Card from '../../components/BlurCard';
 import Section from '../../components/Section';
 import { MainContainer } from '../../components/MainContainer';
 
-import me from '../../assets/img/me2.webp';
+import studioPhoto from '../../assets/img/studioPhoto.webp';
 
 import {
   AboutContainer,
@@ -17,6 +17,7 @@ import {
   Img,
   Info,
   HeaderContent,
+  ImgContainer,
 } from './styles';
 import { i18n } from '../../translate/i18n';
 
@@ -43,13 +44,16 @@ export default function About() {
                     {i18n.t('aboutPage.introInfo.pt3')}
                     {i18n.t('aboutPage.introInfo.pt4')}
                   </Info>
-                  <Info>{i18n.t('aboutPage.introInfo.pt5')}</Info>
 
                   <HeaderContent>
-                    <Img
-                      src={me}
-                      alt={i18n.t('aboutPage.contentInfo.altTextImg')}
-                    />
+                    <ImgContainer>
+                      <Img
+                        src={studioPhoto}
+                        alt={i18n.t('aboutPage.contentInfo.altTextImg')}
+                      />
+                      <span>{i18n.t('aboutPage.contentInfo.imgSubtitle')}</span>
+                    </ImgContainer>
+                    <Info>{i18n.t('aboutPage.introInfo.pt5')}</Info>
                     <Info>
                       {i18n.t('aboutPage.contentInfo.pt1')}
                       <span>

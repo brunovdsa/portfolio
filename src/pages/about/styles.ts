@@ -24,10 +24,30 @@ export const MainTitle = styled.h1`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
 `;
 
 export const HeaderContent = styled.div``;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  span {
+    margin: 0.3rem 0 0;
+  }
+
+  @media (min-width: 1100px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left !important;
+    margin: 0 1rem 0 0;
+    padding: 0 0 0.5rem 0;
+  }
+`;
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -36,11 +56,12 @@ export const AboutContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  display: none;
-  opacity: 95%;
+  display: block;
+  width: 100%;
   @media (min-width: 1100px) {
     display: block;
-    width: 17rem;
+    width: 18rem;
+
     float: left !important;
     margin: 0 1rem 0 0;
   }
