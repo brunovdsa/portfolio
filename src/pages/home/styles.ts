@@ -23,7 +23,7 @@ export const Img = styled.img`
   margin: 0 0 3rem;
 
   @media (min-width: 1100px) {
-    height: 18rem;
+    height: 20rem;
   }
 `;
 
@@ -56,7 +56,7 @@ export const Links = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 4rem;
+  margin: 1rem 4rem;
 `;
 
 export const ProjectsBtn = styled.div`

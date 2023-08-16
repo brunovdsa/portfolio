@@ -31,8 +31,13 @@ export const Title = styled.div`
   display: flex;
 
   img {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+
+    @media (min-width: 1100px) {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 `;
 

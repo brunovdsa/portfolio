@@ -6,42 +6,6 @@ export const Container = styled.div`
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
-  background: ${(props) => props.theme.colors.background_800};
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  @media (min-width: 1100px) {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: ${(props) => props.theme.colors.background_800};
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-  }
 `;
 
 export const Page = styled.div`

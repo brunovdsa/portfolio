@@ -25,7 +25,7 @@ export const Button = styled.button`
   font-size: ${(props) => props.theme.font_size.md};
 
   @media (min-width: 1100px) {
-    bottom: 70px;
+    bottom: 90px;
     right: 50px;
     height: 3.5rem;
     width: 3.5rem;
