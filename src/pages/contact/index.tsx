@@ -87,7 +87,7 @@ export default function Contact() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.9 }}
-          style={{ height: '100vh' }}
+          style={{ height: '100%' }}
         >
           <div onClick={handleFieldsError}>
             {fieldsError === true ? (

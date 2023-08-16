@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  scroll-behavior: smooth;
+  height: 100%;
   margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
   background: ${(props) => props.theme.colors.background_800};
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
@@ -20,6 +22,9 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1100px) {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background: ${(props) => props.theme.colors.background_800};
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;

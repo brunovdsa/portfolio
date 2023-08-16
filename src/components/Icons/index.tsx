@@ -1,4 +1,8 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faLinkedin,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faAngleDown,
   faBars,
@@ -43,6 +47,9 @@ export function GitHubIcon() {
 }
 export function LinkedinIcon() {
   return <FontAwesomeIcon icon={faLinkedin} />;
+}
+export function WppIcon() {
+  return <FontAwesomeIcon icon={faWhatsapp} />;
 }
 export function GlobeIcon() {
   return <FontAwesomeIcon icon={faGlobe} />;

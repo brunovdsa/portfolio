@@ -1,6 +1,6 @@
 import { ChooseLanguage, Container, LinksContainer } from './styles';
 
-import { GitHubIcon, LinkedinIcon } from '../Icons';
+import { GitHubIcon, LinkedinIcon, WppIcon } from '../Icons';
 import { Link } from 'react-router-dom';
 import { ChooseLanguageBar } from '../ChooseLanguageBar';
 
@@ -24,6 +24,9 @@ export function Footer(props: FooterProps) {
         </Link>
         <Link to={'https://www.linkedin.com/in/brunovdsa/'}>
           <LinkedinIcon />
+        </Link>
+        <Link to={'https://wa.me/5547999054703'}>
+          <WppIcon />
         </Link>
       </LinksContainer>
     </Container>

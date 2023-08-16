@@ -25,7 +25,6 @@ export const Modal = styled.div`
   justify-content: center;
   align-items: center;
   background: ${(props) => props.theme.colors.background};
-
   height: 0rem;
   width: 50rem;
 

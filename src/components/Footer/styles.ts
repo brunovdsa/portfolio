@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 0.9rem 2rem;
   background: ${(props) => props.theme.colors.background};
   box-shadow: 0px 0px 2px 0 ${(props) => props.theme.colors.box_shadow};
 
@@ -24,5 +24,5 @@ export const LinksContainer = styled.div`
   display: flex;
 
   gap: 2rem;
-  font-size: ${(props) => props.theme.font_size.sm};
+  font-size: ${(props) => props.theme.font_size.md};
 `;
