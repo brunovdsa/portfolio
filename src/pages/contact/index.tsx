@@ -37,7 +37,6 @@ export default function Contact() {
       return;
     } else {
       setFieldsError(false);
-      console.log('fields: ' + fieldsError);
     }
 
     const sendEmailParams = {
@@ -56,7 +55,6 @@ export default function Contact() {
       )
       .then(
         (res: any) => {
-          console.log('Email sent!' + res.status);
           setName('');
           setSubject('');
           setEmail('');

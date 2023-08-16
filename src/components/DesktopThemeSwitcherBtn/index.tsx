@@ -8,7 +8,6 @@ interface ThemeSwitcherBtnProps {
 }
 
 export default function MobileThemeSwitcherBtn(props: ThemeSwitcherBtnProps) {
-  console.log(props.title);
   return (
     <ThemeSwitcher onClick={props.toggleTheme}>
       <Icon>{props.title === 'light' ? <MoonIcon /> : <SunIcon />}</Icon>
