@@ -15,7 +15,7 @@ export const MainTitle = styled.h1`
   font-size: ${(props) => props.theme.font_size.xlg};
   color: ${(props) => props.theme.colors.text};
 
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
 `;
 
 export const Form = styled.form`
