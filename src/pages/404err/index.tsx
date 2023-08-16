@@ -11,11 +11,15 @@ import {
 } from './styles';
 import { GitHubIcon, LinkedinIcon, WppIcon } from '../../components/Icons';
 import { i18n } from '../../translate/i18n';
+import { Helmet } from 'react-helmet';
 
 export function PageNotFound() {
   return (
     <MainContainer>
       <Container>
+        <Helmet>
+          <title>{i18n.t('pageNotFoundTabTitle')}</title>
+        </Helmet>
         <Title>{i18n.t('pageNotFound.title')}</Title>
         <ErrorName>{i18n.t('pageNotFound.errorName')}</ErrorName>
         <Message>{i18n.t('pageNotFound.message')}</Message>
