@@ -146,6 +146,16 @@ const messages = {
           pt16: 'here',
         },
       },
+      //404 PAGE
+      pageNotFoundTabTitle: '404 - Page not found.',
+      pageNotFound: {
+        title: '404!',
+        errorName: 'Page not found.',
+        message: "The page you're looking for dosen't exist.",
+        goBackMessage: 'Go back to ',
+        linkToHome: 'home page.',
+        followMeText: 'You can also follow me on: ',
+      },
     },
   },
 };
