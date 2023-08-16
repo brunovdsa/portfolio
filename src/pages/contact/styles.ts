@@ -4,6 +4,11 @@ export const Container = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
+
+  @media (min-width: 1100px) {
+    padding: 1rem 0rem 1.4rem;
+  }
 `;
 
 export const MainTitle = styled.h1`
