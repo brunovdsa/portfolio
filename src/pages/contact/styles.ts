@@ -7,7 +7,7 @@ export const Container = styled.main`
   height: 100%;
 
   @media (min-width: 1100px) {
-    padding: 1rem 0rem 1.4rem;
+    padding: 1rem 0rem 0.2rem;
   }
 `;
 

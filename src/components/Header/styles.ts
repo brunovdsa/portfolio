@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
+  padding: 0rem 1.5rem;
+
+  width: 100%;
+  height: 5rem;
+  flex: 0 0 auto;
 
   background: ${(props) => props.theme.colors.overlay};
   box-shadow: 0px 0px 0px 0 ${(props) => props.theme.colors.box_shadow};
-
-  height: 5rem;
 
   a {
     text-decoration: none;

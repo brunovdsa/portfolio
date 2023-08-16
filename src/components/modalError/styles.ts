@@ -12,6 +12,10 @@ export const Container = styled.div`
   right: 0;
   left: 0;
   position: absolute;
+  box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 `;
 
 export const Modal = styled.div`
@@ -20,13 +24,6 @@ export const Modal = styled.div`
   align-items: center;
 
   color: ${(props) => props.theme.colors.text};
-  box-shadow: 0 8px 22px 0 ${(props) => props.theme.colors.box_shadow};
-
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-
-  height: 30rem;
-  width: 60rem;
 
   border-radius: 50px;
 `;

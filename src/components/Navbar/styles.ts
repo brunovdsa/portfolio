@@ -16,7 +16,7 @@ export const BackgroundOverlay = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: ${(props) => props.theme.colors.overlay};
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
@@ -69,7 +69,7 @@ export const NavFooter = styled.div`
   display: flex;
   align-items: flex-end;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const ThemeSwitcherContainer = styled.div`

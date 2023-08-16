@@ -8,7 +8,7 @@ import dark from '../../theme/dark';
 import light from '../../theme/light';
 import GlobalStyle from '../../assets/styles/global';
 
-import { Container } from './styles';
+import { Container, Page } from './styles';
 import { useState } from 'react';
 import { Footer } from '../Footer';
 
@@ -41,7 +41,7 @@ export function MainContainer(props: MainContainerProps) {
       <Container>
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} theme={theme} />
-        <div>{props.children}</div>
+        <Page>{props.children}</Page>
         <Footer handleSelect={handleSelect} language={language} />
       </Container>
     </ThemeProvider>

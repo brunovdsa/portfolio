@@ -7,6 +7,7 @@ export const Container = styled.footer`
   padding: 0.9rem 2rem;
   background: ${(props) => props.theme.colors.background};
   box-shadow: 0px 0px 2px 0 ${(props) => props.theme.colors.box_shadow};
+  flex: 0 1 40px;
 
   a {
     text-decoration: none;
