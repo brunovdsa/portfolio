@@ -1,48 +1,50 @@
-import { Link } from 'react-router-dom';
-import { MainContainer } from '../../components/MainContainer';
+import { Link } from "react-router-dom";
+import { MainContainer } from "../../components/MainContainer";
 import {
-  Container,
-  Content,
-  ErrorName,
-  FollowMeText,
-  IconsContainer,
-  Message,
-  Title,
-} from './styles';
-import { GitHubIcon, LinkedinIcon, WppIcon } from '../../components/Icons';
-import { i18n } from '../../translate/i18n';
-import { Helmet } from 'react-helmet';
+	Container,
+	Content,
+	ErrorName,
+	FollowMeText,
+	IconsContainer,
+	Message,
+	Title,
+} from "./styles";
+import { GitHubIcon, LinkedinIcon, WppIcon } from "../../components/Icons";
+import { i18n } from "../../translate/i18n";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export function PageNotFound() {
-  return (
-    <MainContainer>
-      <Container>
-        <Helmet>
-          <title>{i18n.t('pageNotFoundTabTitle')}</title>
-        </Helmet>
-        <Title>{i18n.t('pageNotFound.title')}</Title>
-        <ErrorName>{i18n.t('pageNotFound.errorName')}</ErrorName>
-        <Message>{i18n.t('pageNotFound.message')}</Message>
+	return (
+		<MainContainer>
+			<Container>
+				<HelmetProvider>
+					<Helmet>
+						<title>{i18n.t("pageNotFoundTabTitle")}</title>
+					</Helmet>
+				</HelmetProvider>
+				<Title>{i18n.t("pageNotFound.title")}</Title>
+				<ErrorName>{i18n.t("pageNotFound.errorName")}</ErrorName>
+				<Message>{i18n.t("pageNotFound.message")}</Message>
 
-        <Message>
-          {i18n.t('pageNotFound.goBackMessage')}
-          <Link to={'/'}>{i18n.t('pageNotFound.linkToHome')}</Link>
-        </Message>
-        <Content>
-          <FollowMeText>{i18n.t('pageNotFound.followMeText')}</FollowMeText>
-          <IconsContainer>
-            <Link to={'https://github.com/brunovdsa'}>
-              <GitHubIcon />
-            </Link>
-            <Link to={'https://www.linkedin.com/in/brunovdsa/'}>
-              <LinkedinIcon />
-            </Link>
-            <Link to={'https://wa.me/5547999054703'}>
-              <WppIcon />
-            </Link>
-          </IconsContainer>
-        </Content>
-      </Container>
-    </MainContainer>
-  );
+				<Message>
+					{i18n.t("pageNotFound.goBackMessage")}
+					<Link to={"/"}>{i18n.t("pageNotFound.linkToHome")}</Link>
+				</Message>
+				<Content>
+					<FollowMeText>{i18n.t("pageNotFound.followMeText")}</FollowMeText>
+					<IconsContainer>
+						<Link to={"https://github.com/brunovdsa"}>
+							<GitHubIcon />
+						</Link>
+						<Link to={"https://www.linkedin.com/in/brunovdsa/"}>
+							<LinkedinIcon />
+						</Link>
+						<Link to={"https://wa.me/5547999054703"}>
+							<WppIcon />
+						</Link>
+					</IconsContainer>
+				</Content>
+			</Container>
+		</MainContainer>
+	);
 }
