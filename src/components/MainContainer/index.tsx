@@ -10,6 +10,7 @@ import GlobalStyle from "../../assets/styles/global";
 
 import { Container, Page } from "./styles";
 import { Footer } from "../Footer";
+import { JSX } from "react";
 
 interface MainContainerProps {
 	children: JSX.Element;

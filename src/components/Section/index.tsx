@@ -1,13 +1,14 @@
-import { Container, Content } from './styles';
+import { JSX } from "react";
+import { Container, Content } from "./styles";
 
 interface SectionProps {
-  children: JSX.Element;
+	children: JSX.Element;
 }
 
 export default function Section(props: SectionProps) {
-  return (
-    <Container>
-      <Content>{props.children}</Content>
-    </Container>
-  );
+	return (
+		<Container>
+			<Content>{props.children}</Content>
+		</Container>
+	);
 }

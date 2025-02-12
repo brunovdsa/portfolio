@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { Container, Modal } from './styles';
 
 interface modalErrorProps {
