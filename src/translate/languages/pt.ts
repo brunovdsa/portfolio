@@ -57,8 +57,32 @@ export const messages = {
 
 				companys: [
 					{
+						company: "Martinelli Tech",
+						jobTitle: "Desenvolvedor Frontend",
+						description:
+							"Contribuindo para a evolução dos sistemas tributários e fiscais, com foco naotimização de desempenho e na adaptação das plataformas para melhoratender às demandas do usuário. Busquei constantemente soluções quetornassem os processos mais ágeis e eficientes, garantindo a integridade e ausabilidade das interfaces. Além do desenvolvimento, participei de decisõesestratégicas para aprimorar o produto e colaborei ativamente com a equipe,compartilhando conhecimento e auxiliando na resolução de desafios técnicos,sempre com o objetivo de garantir a conformidade, segurança e eficiência dosprocessos fiscais.",
+						techs: [
+							"Angular 19",
+							"Git",
+							"Azure DevOps",
+							"Syncfusion",
+							"Bootstrap",
+							"SASS",
+							"Srum",
+						],
+						years: ["Fevereiro/2024 - Present"],
+					},
+					{
+						company: "Trell",
+						jobTitle: "Desenvolvedor",
+						description:
+							"Atuando em e-commerce especializado em peças antifurto para caminhões.Responsável pela manutenção contínua e suporte do site, assegurandoa funcionalidade otimizada e a experiência do usuário. Colaboro naimplementação de recursos para aprimorar a interface, facilitar a navegaçãoe impulsionar as conversões. Comprometido em garantir a segurança e aintegridade do sistema.",
+						techs: ["WordPress", "Elementor", "WooCommerce"],
+						years: ["Abril/2023 - Fevereiro/2024"],
+					},
+					{
 						company: "1WolrdSync",
-						jobTitle: "Desenvolvedor Full Stack Java Jr",
+						jobTitle: "Desenvolvedor Junior",
 						description:
 							"Para o segmento de varejo, o desenvolvimento tinha o dever de entregar sempre a melhor informação e as melhores imagens com relação ao produto, ao cliente. Com boas práticas e códigos limpos e de fácil manutenção. Contato com clientes internos e externos por meio de chamadas de voz e vídeo, sendo a maioria em inglês por conta da grande variedade de pessoas de fora do país envolvidas nos projetos.",
 						techs: [
@@ -69,10 +93,11 @@ export const messages = {
 							"Java",
 							"Jira (Atlassian)",
 						],
+						years: ["Maio/2021 - Agosto/2021"],
 					},
 					{
 						company: "Opentech Soluções em Gerenciamento de Risco e Logística",
-						jobTitle: "Desenvolvedor Frontend Junior",
+						jobTitle: "Desenvolvedor Junior",
 						description:
 							"Desenvolvimento de soluções para a gestão de riscos e veículos para o segmento de rastreamento e logística. Trabalhando com manutenção do sistema logístico da empresa, criando novas páginas e funcionalidades para o usuário final. Aplicando conceitos de mobile first e UX. Iniciado em um sistema legado, utilizando jQuery e bootstrap como ferramentas principais, e posteriormente convidado a participar do desenvolvimento do produto principal, utilizando React.",
 						techs: [
@@ -87,6 +112,7 @@ export const messages = {
 							"SQL Server",
 							"Scrum",
 						],
+						years: ["Novembro/2020 - Abril/2021"],
 					},
 					{
 						company: "Opentech Soluções em Gerenciamento de Risco e Logística",
@@ -101,6 +127,7 @@ export const messages = {
 							"Workflow",
 							"XML",
 						],
+						years: ["Maio/2019 - Novembro/2020"],
 					},
 				],
 			},

@@ -35,7 +35,7 @@ export default function WorkExperience() {
 							key={index}
 							company={exp.company}
 							jobTitle={exp.jobTitle}
-							years={"2021 - 2021"}
+							years={exp.years}
 							description={exp.description}
 							techs={exp.techs}
 						/>

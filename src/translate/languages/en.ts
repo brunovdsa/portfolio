@@ -58,8 +58,32 @@ const messages = {
 				title: "Work Experience.",
 				companys: [
 					{
+						company: "Martinelli Tech",
+						jobTitle: "Frontend Developer",
+						description:
+							"Contributing to the evolution of tax and fiscal systems, focusing on performance optimization and adapting platforms to better meet user demands. I consistently sought solutions to streamline processes and enhance efficiency while ensuring the integrity and usability of interfaces. Beyond development, I participated in strategic decisions to improve the product and actively collaborated with the team, sharing knowledge and assisting in solving technical challenges—always aiming to ensure compliance, security, and efficiency in fiscal processes.",
+						techs: [
+							"Angular 19",
+							"Git",
+							"Azure DevOps",
+							"Syncfusion",
+							"Bootstrap",
+							"SASS",
+							"Srum",
+						],
+						years: ["Fevereiro/2024 - Present"],
+					},
+					{
+						company: "Trell",
+						jobTitle: "Developer",
+						description:
+							"Working in e-commerce specializing in anti-theft truck parts. Responsible for the ongoing maintenance and support of the website, ensuring optimal functionality and user experience. I collaborate on implementing features to enhance the interface, streamline navigation, and boost conversions. Committed to maintaining the system’s security and integrity.",
+						techs: ["WordPress", "Elementor", "WooCommerce"],
+						years: ["April/2023 - February/2024"],
+					},
+					{
 						company: "1WorldSyncBR",
-						jobTitle: "Junior Full-Stack Developer",
+						jobTitle: "Junior Developer",
 						description:
 							"For the retail segment, the developer had the duty to always deliver the best quality information and images, in relation to the product, which will later be used by the final client. With good practices, clean codes and easy maintenance. Contact with internal and external customers through voice and video calls, mostly in English due to the wide variety of people from outside the country involved in the projects.",
 						techs: [
@@ -70,10 +94,11 @@ const messages = {
 							"Java",
 							"Jira (Atlassian)",
 						],
+						years: ["May/2021 - August/2021"],
 					},
 					{
 						company: "Opentech Logistics and Risk Management Solutions",
-						jobTitle: "Junior Front-End Developer",
+						jobTitle: "Junior Developer",
 						description:
 							"Development of solutions for the risk management and vehicle tracking segment. Working with maintenance of the logistics system for the company, creating new pages and functionalities for the end user. Applying concepts of mobile first and great UX design. Started in a legacy system, using jQuery and bootstrap as main tools, and later changed to the main product, using React.",
 						techs: [
@@ -88,12 +113,13 @@ const messages = {
 							"SQL Server",
 							"Scrum",
 						],
+						years: ["November/2020 - April/2021"],
 					},
 					{
 						company: "Opentech Logistics and Risk Management Solutions",
 						jobTitle: "Process Assistant",
 						description:
-							"Used a front-end platform, automating processes of the tracking and registration areas of the company. Direct contact with internal and external customers by e-mail for alignment of business rules.",
+							"Used a frontend platform, automating processes of the tracking and registration areas of the company. Direct contact with internal and external customers by e-mail for alignment of business rules.",
 						techs: [
 							"BOT",
 							"Flowcharts",
@@ -102,6 +128,7 @@ const messages = {
 							"Workflow",
 							"XML",
 						],
+						years: ["May/2019 - November/2020"],
 					},
 				],
 			},
@@ -148,7 +175,7 @@ const messages = {
 				introInfo: {
 					pt1: "I'm Bruno, a developer & ",
 					pt2: "creative coder ",
-					pt3: "who specializes in front-end development. My mission is to translate user-focussed designs into beautiful websites or applications.",
+					pt3: "who specializes in frontend development. My mission is to translate user-focussed designs into beautiful websites or applications.",
 					pt4: " I'm also a photographer and musician in my spare time, and I take it as a hobby and a way to express myself or how I see the world.",
 					pt5: "I'm currently looking for an oportunity to use my knoledge and experience to help the user and the team I'll be a part of.",
 				},
@@ -162,7 +189,7 @@ const messages = {
 					pt5: "1WorldSyncBR",
 					pt6: ", I worked at ",
 					pt7: "Opentech",
-					pt8: ". First, as a process assistant automating decision-making processes of the truck tracking system. And later on, I became a junior front-end developer, helping to give maintenance to the logistic system the comapany uses.",
+					pt8: ". First, as a process assistant automating decision-making processes of the truck tracking system. And later on, I became a junior frontend developer, helping to give maintenance to the logistic system the comapany uses.",
 					pt9: "You can find me on ",
 					pt10: "Linkedin",
 					pt11: " , where I keep all my professional data up to date, and where I share and update projects. You can also follow me on ",
